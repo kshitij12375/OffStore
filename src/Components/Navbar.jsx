@@ -3,8 +3,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const a = 2;
-  console.log(a);
   return (
     < >
       <nav className="flexbox">
