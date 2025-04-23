@@ -4,12 +4,29 @@
     flex-direction: row;
 }
 .home1-img1 img{
-    height: 413px;
-    width: 750px;
+    height: 453px;
+    width: 758px;
 
 }
 .home1-img2 img{
-    height: 413px;
-    width: 750px;
+    height: 453px;
+    width: 758px;
 
+
+}
+.Line{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.home2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card1{
+    width: 180px;
+    height: 220px;
+    background-color: aquamarine;
 }
