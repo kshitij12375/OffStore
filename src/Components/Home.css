@@ -1,0 +1,15 @@
+.home1{
+ 
+    display: flex;
+    flex-direction: row;
+}
+.home1-img1 img{
+    height: 413px;
+    width: 750px;
+
+}
+.home1-img2 img{
+    height: 413px;
+    width: 750px;
+
+}
