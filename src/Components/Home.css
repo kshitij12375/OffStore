@@ -5,12 +5,12 @@
 }
 .home1-img1 img{
     height: 453px;
-    width: 758px;
+    width: 756px;
 
 }
 .home1-img2 img{
     height: 453px;
-    width: 758px;
+    width: 756px;
 
 
 }
@@ -22,11 +22,12 @@
 .home2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 20px;
 }
 .card1{
     width: 180px;
     height: 220px;
-    background-color: aquamarine;
+   
+    background-color: rgb(157, 159, 159);
 }
