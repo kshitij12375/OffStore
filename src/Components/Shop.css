@@ -17,8 +17,9 @@
     margin: 10px;
 }
 .Line{
-    margin: 10px;
+  margin: 10px;
   display: flex;
+  height: 60px;
 }
 .Line div{
     gap: 6px;
@@ -39,4 +40,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container{
+    margin: 10px;
+    gap: 30px;
+}
+.card{
+    background-color: #0000000e;
+    width: 500px;
+    height: 350px;
+    
+}
+.details{
+    background-color: #0000000e;
+    width: 25%;
+    height: 40px;
 }
