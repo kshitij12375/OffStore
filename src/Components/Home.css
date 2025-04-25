@@ -5,7 +5,8 @@
 .Line{
     background-color: black;
     color: white;
-    text-align: center;
+    margin: 10px;
+    height: 60px;
 }
 .home2{
     display: flex;
@@ -25,4 +26,9 @@
     width: 220px;
     height: 220px;
     padding: 10px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

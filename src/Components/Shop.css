@@ -1,0 +1,42 @@
+.carousel-item{
+    height: 500px;
+    width: 100%;
+}
+.Line{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.home2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.home1{
+    margin: 10px;
+}
+.Line{
+    margin: 10px;
+  display: flex;
+}
+.Line div{
+    gap: 6px;
+    width: 50%;
+}
+.dropdown{
+     height: 33px;
+     width: 33px;
+    border: none;
+    background-image: url("../assets/icons8-drop-down-100.png");
+    background-repeat: no-repeat;
+    background-size:40px 40px;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
