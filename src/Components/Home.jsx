@@ -1,9 +1,9 @@
 import './Home.css'
-const Home =() => {
+const Home = () => {
 
-    return(
-        <>
-        <div className="home1">
+  return (
+    <>
+      <div className="home1">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="ride">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -188,13 +188,11 @@ const Home =() => {
         
         </div>
         </div>
-                <div className='footer2'>
-                </div>
-            </div>
+          </div>
+          </>      
 
+    
 
-        </>
-
- )
+  )
 }
 export default Home;

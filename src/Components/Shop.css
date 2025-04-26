@@ -1,0 +1,66 @@
+.carousel-item{
+    height: 500px;
+    width: 100%;
+}
+.Line{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.home2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.home1{
+    margin: 10px;
+}
+.Line{
+  margin: 10px;
+  display: flex;
+  height: 60px;
+}
+.Line div{
+    gap: 6px;
+    width: 50%;
+}
+.dropdown{
+     height: 33px;
+     width: 33px;
+    border: none;
+    background-image: url("../assets/icons8-drop-down-100.png");
+    background-repeat: no-repeat;
+    background-size:40px 40px;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MensFashion{
+    width: 50%;
+    margin: 10px;
+}
+#womensFashion{
+    width: 50%;
+    margin: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.card{
+    background-color: #0000001c;
+    height: 350px;
+    border-radius: 0px;
+    border: 0px ;
+}
+.details{
+    background-color: #00000017;
+    height: 50px;
+}
