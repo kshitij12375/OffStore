@@ -29,16 +29,40 @@ const Shop = () => {
       <div className='flexbox'><h1>MENS FASHION</h1><button className='dropdown'></button></div>
       <div className='flexbox'><h1>WOMENS FASHION</h1><button className='dropdown'></button></div>
       </div>
-      <div>
-      <div className="container flexbox">
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        </div>
-        <div className="container flexbox">
+      <div className="flexbox">
+      <div id="MensFashion" className="grid">
+        <div className="card" id='cm1'></div>
+        <div className="card " id='cm2'></div>
         <div className="details"></div>
         <div className="details"></div>
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+      </div>
+      <div id="womensFashion" className="grid">
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+        <div className="card "></div>
+        <div className="card "></div>
+        <div className="details"></div>
+        <div className="details"></div>
+       <div className="card "></div>
+        <div className="card "></div>
         <div className="details"></div>
         <div className="details"></div>
       </div>

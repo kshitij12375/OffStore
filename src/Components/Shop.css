@@ -41,18 +41,26 @@
     justify-content: center;
     align-items: center;
 }
-.container{
+#MensFashion{
+    width: 50%;
     margin: 10px;
-    gap: 30px;
+}
+#womensFashion{
+    width: 50%;
+    margin: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 .card{
-    background-color: #0000000e;
-    width: 500px;
+    background-color: #0000001c;
     height: 350px;
-    
+    border-radius: 0px;
+    border: 0px ;
 }
 .details{
-    background-color: #0000000e;
-    width: 25%;
-    height: 40px;
+    background-color: #00000017;
+    height: 50px;
 }
