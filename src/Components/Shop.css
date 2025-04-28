@@ -34,12 +34,19 @@
     background-size:40px 40px;
     background-position: center;
     border-radius: 6px;
+    background-color: white;
 }
-
+.no-caret::after {
+    display: none !important;
+  }
+  
 .flexbox{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flexbox1{
+    display: flex;
 }
 #MensFashion{
     width: 50%;
@@ -54,13 +61,45 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.gridd{
+    display: grid;
+    grid-template-columns:3fr 5fr 2fr;
+}
+.gridd :nth-child(1)
+{
+    transform: translate(3px);
+}
+.gridd :nth-child(3)
+{
+    text-align: end;
+    transform: translate(-5px);
+}
+.gridd :nth-child(2)
+{
+    text-align: center;
+    transform: translate(3px);
+}
+.gridd img{
+    height: 20px;
+    width: 20px;
+    vertical-align: bottom;
+}
 .card{
     background-color: #0000001c;
     height: 350px;
+    border: none;
     border-radius: 0px;
-    border: 0px ;
+}
+.card img{
+    height: 335px;
+    width: 290px;
 }
 .details{
     background-color: #00000017;
     height: 50px;
+    box-sizing: border-box;
+}
+.details :nth-child(1)
+{
+    transform: translate(3px);
 }

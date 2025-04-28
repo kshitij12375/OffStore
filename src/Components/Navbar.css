@@ -54,6 +54,7 @@ nav ul{
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 3px;
+    border: none;
 }
 #search input::placeholder{
     font-weight: bold;
