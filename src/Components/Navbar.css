@@ -1,9 +1,8 @@
 
 nav{
+    margin: 10px;
     height: 70px;
-    width: 100%;
     margin-bottom: 10px;
-   
     background-color: #0d0717f8;
     color: white;
 }
@@ -49,12 +48,13 @@ nav ul{
 }
 #search input {
     width: 80%;
-    height: 35%;
+    height: 40%;
     border-radius: 7px;
     background-image: url('../assets/icons8-search-100.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 3px;
+    border: none;
 }
 #search input::placeholder{
     font-weight: bold;
