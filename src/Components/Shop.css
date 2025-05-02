@@ -1,26 +1,4 @@
-.carousel-item{
-    height: 500px;
-    width: 100%;
-}
-.Line{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-.home2{
-    display: flex;
-    flex-direction: row;
-    margin-left: 150px;
-    margin-top: 20px;
-}
-.home1{
-    margin: 10px;
-}
-.Line{
-  margin: 10px;
-  display: flex;
-  height: 60px;
-}
+
 .Line div{
     gap: 6px;
     width: 50%;

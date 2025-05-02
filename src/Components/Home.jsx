@@ -165,29 +165,80 @@ const Home = () => {
                     </div>
             </div>
             </div>
-            <div className='home3'></div>
+            <div className='home3'>
+                <div className='box1'>
+                        <h2>Exclusive Sale</h2>
+                        <h2>Upto 70% Off</h2>
+                        <button>Explore Now</button>
+                </div>
+                <div className='box2'>
+                        <div className='box3'>
+                                <h2>Crazy Deals....</h2>
+                                <h3>Buy 1 Get 1 Free</h3>
+                                <p>Classic Dresses on Sale</p>
+                                <button>Shop Now</button>
+                                </div>
+                                <div className='box4'>
+                                <h2>Walk on Style</h2>
+                                <h3>New Footwear Collections</h3>
+                                <button>Shop Now</button>
+                                </div>
+                        </div>
+                        <div className='box5'>
+                        <div className='box6'>
+                                <h2>Traditional Here</h2>
+                                
+                               
+                                <button>Get it</button>
+                                </div>
+                                <div className='box7'>
+                                <h2>Explore for kids</h2>
+                                
+                                
+                                </div>
+                                <div className='box8'>
+                                <h2>Formals calling..</h2>
+                                
+                                <button>Explore</button>
+                                </div>
+                        </div>
+            </div>
             <div className="footer">
-              <div className='footer1'>
-              <div id="logo">
-          <div>
-            <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"></link>
-            OffStore
-         
-          </div>
-         
-          
-         
-        </div>
-        <div className='text4'>
-          <h4>Contact</h4>
-          <p>+91 1234567890</p>
-          <p> Adress:New York</p>
-          <p>Gmail:abc@gmail.com</p>
-          
+  <div className="footer1">
+    <div id="logo">
+      <div style={{ fontFamily: "'Irish Grover', cursive", fontSize: "28px" }}>OffStore</div>
+      
+    </div>
 
-        
-        </div>
-        </div>
+    <div className="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About Us</li>
+        <li>FAQs</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div className="footer-contact">
+      <h4>Contact Us</h4>
+      <p>+91 1234567890</p>
+      <p>Address: New York, USA</p>
+      <p>✉️ Email: support@offstore.com</p>
+    </div>
+
+    <div className="footer-social">
+      <h4>Follow Us</h4>
+      <div className="social-icons">
+        <i className="fab fa-facebook-f"></i>
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-twitter"></i>
+        <i className="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
           </div>
           </>      
 

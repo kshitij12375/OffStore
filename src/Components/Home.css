@@ -1,8 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
 .carousel-item{
     height: 500px;
     width: 100%;
 }
 .Line{
+    text-align: center;
     background-color: black;
     color: white;
     margin: 10px;
@@ -11,12 +17,12 @@
 .home2{
     display: flex;
     flex-direction: row;
-    margin-left: -5px;
+    
     margin-top: 20px;
 }
 .card1{
     width: 220px;
-    margin: 18px;
+    margin: 16px;
     height: 280px;
    
     background-color: rgb(222, 226, 226);
@@ -66,7 +72,8 @@
 }
 .home3{
     height: 900px;
-    background-color: rgb(232, 227, 227);
+    background-color: seashell;
+
 }
 .footer{
     height: 400px;
@@ -76,17 +83,105 @@
     justify-content: space-between;
     color: white;
 }
-.text4{
-    font-size: 20px;
-    
-    color: white;
-   
-    position: relative;
-    bottom: 200px;
-   
-}
-.flexbox{
+.footer1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    margin: 60px;
+    max-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #bbb;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #ccc;
+}
+
+.box1{
+    text-align: center;
+    height: 130px;
+   background-color: beige;
+
+
+}
+.box2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.box3{
+    background-image: url('src\\assets\\image1.jpg');
+    height: 300px;
+    width: 600px;
+    background-size: cover;
+}
+.box4{
+    background-image: url('src\\assets\\image2.jpg');
+    height: 300px;
+    width: 600px;
+    background-size: cover;
+}
+.box5{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box6{
+    background-image: url('src\\assets\\image3.jpg');
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+
+}
+.box7{
+    background-image: url('src\\assets\\image4.jpg');
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+
+}
+.box8{
+    background-image: url('src\\assets\\image5.jpg');
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+
 }
