@@ -1,4 +1,7 @@
 import './Home.css'
+
+import cart from '../assets/cart.png';
+
 const Home = () => {
 
   return (
@@ -44,7 +47,17 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
+                    </div>
+                    </div>
+            </div>
+            <div className='card1'> 
+            <div className='card2'>
+                    <img src="src\assets\shirt4.webp" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -54,17 +67,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
-                    </div>
-                    </div>
-            </div>
-            <div className='card1'>
-            <div className='card2'>
-                    <img src="src\assets\shirt4.webp" alt="shirt4"></img>
-                    <div className='card3'>
-                    <p id='h'>Mast and Habour</p>
-                    <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     
                     </div>
@@ -75,7 +78,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
 
                     </div>
@@ -86,7 +89,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -96,7 +99,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -108,7 +111,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -118,7 +121,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -128,7 +131,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     
                     </div>
@@ -139,7 +142,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
 
                     </div>
@@ -150,7 +153,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
@@ -160,7 +163,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p>Rs. 999</p>
+                    <p id ="w">Rs.999<img src={cart} /></p>
                     </div>
                     </div>
             </div>
