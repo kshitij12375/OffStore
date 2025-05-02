@@ -19,11 +19,11 @@ const Navbar = () => {
           <input type="text" placeholder="Find Your Styles"></input>
         </div>
         <ul className="flexbox">
-          <li><Link to="/" className="link">Home</Link></li>
-          <li><Link to="/shop" className="link">Shop</Link></li>
-          <li><Link to="/about" className="link">About</Link></li>
-          <li><Link to="/cart" className="link">Cart</Link></li>
-          <li><Link to="/login" className="link">Login</Link></li>
+          <li><Link to="/" className="linknav">Home</Link></li>
+          <li><Link to="/shop" className="linknav">Shop</Link></li>
+          <li><Link to="/about" className="linknav">About</Link></li>
+          <li><Link to="/cart" className="linknav">Cart</Link></li>
+          <li><Link to="/login" className="linknav">Login</Link></li>
         </ul>
       </nav>
     </>
