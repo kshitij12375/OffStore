@@ -1,0 +1,89 @@
+
+    /* Container */
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .input-field {
+    margin-bottom: 15px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .input-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Button */
+  .login-button {
+    padding: 10px 15px;
+    background-color: #140658;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 15px;
+  }
+  
+  .login-button:hover {
+    background-color: #240869;
+  }
+
+  .text {
+    color: lightslategray;
+  }
+
+  .text1 {
+    color: lightslategray;
+  }
+
+  .link {
+    color: black;
+  }
+  .pass{
+    display: flex;
+    justify-content: space-between;
+  }
+  .forget{
+    color: #979b9d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .login-container {
+      width: 90%;
+    }
+  }
+  
