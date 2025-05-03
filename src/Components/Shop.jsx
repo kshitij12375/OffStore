@@ -7,7 +7,30 @@ import tshirt7 from '../assets/tshirt7.png';
 import rating from '../assets/rating.png';
 import tshirt8 from '../assets/tshirt8.png';
 import cart from '../assets/cart.png';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Shop = () => {
+  const navigate = useNavigate();
+  const [selectedData, setSelectedData] = useState(null);
+
+  const btnclick = (event) => {
+    const clickedBtn = event.target;
+
+    const value = clickedBtn.value;
+    const imgElement = document.getElementById(value)?.querySelector("img");
+    const src = imgElement?.getAttribute("src") || "";
+    const description = document.getElementById(clickedBtn.getAttribute("data-text"))?.innerText || "";
+    const amount = document.getElementById(clickedBtn.getAttribute("data-amount"))?.innerText || "";
+
+    const dataToSend = {
+      image :src,
+      description :description,
+      priceperitem :amount,
+    };
+    setSelectedData(dataToSend);
+    navigate("/cart", { state: dataToSend });
+  };
+   
    return(
      <>
        <div className="home1">
@@ -56,19 +79,19 @@ const Shop = () => {
         <div className="card flexbox" id='cm1'><img src={tshirt1} alt="" /></div>
         <div className="card flexbox" id='cm2'><img src={tshirt3} alt="" /></div>
         <div className="details">
-          <div>Cream Embroidered Polo Slim Fit Shirt</div>
+          <div id='t1'>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
-            <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" />
+            <div id='a1'>450</div>
+            <div ><button className='cartbtn' onClick={btnclick} value='cm1' data-text="t1" data-amount="a1">Add to cart</button><img src={cart} alt="" />
             </div>
             <div >4.7<img src={rating} alt="" /></div>
           </div>
         </div>
         <div className="details">
-        <div>Cream Embroidered Polo Slim Fit Shirt</div>
+        <div id='t2'>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
-            <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
+           <div id="a2">460</div>
+            <div ><button className='cartbtn' onClick={btnclick} value='cm2' data-text="t2" data-amount="a2">Add to cart</button><img src={cart} alt="" /></div>
             <div >4.7<img src={rating} alt="" /></div>
           </div>
         </div>
@@ -76,7 +99,7 @@ const Shop = () => {
         <div className="card flexbox"><img src={tshirt3} alt="" /></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
-            <div>Rs.450</div>
+            <div>Rs.460</div>
             <div >Add to cart<img src={cart} alt="" /></div>
             <div >4.7<img src={rating} alt="" /></div>
           </div></div>
