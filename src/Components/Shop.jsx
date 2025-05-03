@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 const Shop = () => {
   const navigate = useNavigate();
   const [selectedData, setSelectedData] = useState(null);
+  
 
   const btnclick = (event) => {
     const clickedBtn = event.target;
