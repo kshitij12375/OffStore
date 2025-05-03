@@ -13,7 +13,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/dashboard'); // Redirect after login
+      navigate('/'); // Redirect after login
     } catch (err) {
       setError('Invalid email or password');
     }

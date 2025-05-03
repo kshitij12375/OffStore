@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate('/dashboard'); // Redirect after signup
+      navigate('/'); // Redirect after signup
     } catch (err) {
       setError('Signup failed. Email might already be in use.');
     }
