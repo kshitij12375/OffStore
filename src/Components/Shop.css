@@ -40,7 +40,7 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 .gridd{
     display: grid;
@@ -77,7 +77,7 @@
 }
 .details{
     background-color: beige;
-    height: 50px;
+    height: 60px;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
