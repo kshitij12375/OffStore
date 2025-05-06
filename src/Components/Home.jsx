@@ -11,21 +11,19 @@ const Home = () => {
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="src\assets\9706877.jpg" className="d-block w-100" alt="..."></img>
-      <h1 className='text3'>"Your favorite products, just a click away."</h1>
+      
     </div>
     <div className="carousel-item">
       <img src="src\assets\9701606.jpg" className="d-block w-100" alt="..."></img>
-      <h1 className='text2'>"Shopping made simple. Style made personal."
+   
 
-</h1>
+
       
     </div>
     
     <div className="carousel-item">
       <img src="src\assets\handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg" className="d-block w-100" alt="..."></img>
-      <h1 className='text1'>"Where trends begin and savings never end."
-
-</h1>
+  
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -47,7 +45,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     </div>
             </div>
@@ -57,7 +55,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     </div>
             </div>
@@ -67,7 +65,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     
                     </div>
@@ -78,7 +76,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
 
                     </div>
@@ -93,7 +91,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     </div>
             </div>
@@ -103,7 +101,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     </div>
             </div>
@@ -113,7 +111,7 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
                     
                     </div>
@@ -124,13 +122,105 @@ const Home = () => {
                     <div className='card3'>
                     <p id='h'>Mast and Habour</p>
                     <p>Pure Cotton and tailored Shirt</p>
-                    <p id ="w">Rs.999<img src={cart} /></p>
+                    <p id ="w">Rs.999</p>
                     </div>
 
                     </div>
             </div>
            
            
+            </div>
+            <div className="home2">
+            <div className='card1'>
+                <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f5.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    </div>
+            </div>
+            <div className='card1'> 
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f6.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    </div>
+            </div>
+            <div className='card1'>
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f7.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div className='card1'>
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f5.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+
+                    </div>
+            </div>
+           
+        
+            </div>
+            <div className="home2">
+            <div className='card1'>
+                <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f1.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    </div>
+            </div>
+            <div className='card1'> 
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f4.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    </div>
+            </div>
+            <div className='card1'>
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f3.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+                    
+                    </div>
+            </div>
+            <div className='card1'>
+            <div className='card2'>
+                    <img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f2.jpg" alt="shirt4"></img>
+                    <div className='card3'>
+                    <p id='h'>Mast and Habour</p>
+                    <p>Pure Cotton and tailored Shirt</p>
+                    <p id ="w">Rs.999</p>
+                    </div>
+
+                    </div>
+            </div>
+           
+        
             </div>
             <div className='home3'>
                 <div className='box1'>
@@ -156,6 +246,7 @@ const Home = () => {
                                 <button>Get it</button>
                                 </div>
                                 <div className='box7'>
+                                        <button>Get it</button>
                              
                                 
                                 
