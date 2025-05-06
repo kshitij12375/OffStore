@@ -21,17 +21,29 @@
     margin-top: 20px;
 }
 .card1{
-    width: 220px;
+    width: 230px;
     margin: 16px;
+    margin-left: 120px;
     height: 280px;
    
-    background-color: rgb(222, 226, 226);
+    background-color: rgb(240, 249, 249);
+}
+.card2{
+    height: 290px;
+    width: 240px;
+    background-color:white;
+    border-radius: 20px;
+    border-style: solid;
+    
+    border-color: rgb(181, 179, 179,0.2);
+    border-width: 2px;
 }
 .card2 img{
 
     width: 220px;
     height: 220px;
     padding: 10px;
+    padding-left: 26px;
 }
 
 .text3{
@@ -70,7 +82,7 @@
     margin-left: 10px;
 }
 .home3{
-    height: 900px;
+    height: 940px;
     background-color: seashell;
 
 }
@@ -133,12 +145,14 @@
 
 .box1{
     text-align: center;
-    height: 130px;
-   background-color: beige;
+    height: 160px;
+   background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/Shankhadip/MayART25/MAY25_GW_PC_Hero_H1_Sale-is-live_2X._CB795056097_.jpg");
+   background-size: cover;
 
 
 }
 .box2{
+
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -146,13 +160,13 @@
 
 }
 .box3{
-    background-image: url('src\\assets\\image1.jpg');
+    background-image: url('https://cdn.mos.cms.futurecdn.net/GWFmQkkbZVeoSMntPxuvac.jpg');
     height: 300px;
     width: 600px;
     background-size: cover;
 }
 .box4{
-    background-image: url('src\\assets\\image2.jpg');
+    background-image: url('https://cms-cdn.thesolesupplier.co.uk/2021/08/air-jordan-1-high-via-afewstore.jpeg.webp');
     height: 300px;
     width: 600px;
     background-size: cover;
@@ -164,21 +178,21 @@
     justify-content: space-evenly;
 }
 .box6{
-    background-image: url('src\\assets\\image3.jpg');
+    background-image: url('https://thevishnu.in/cdn/shop/articles/vishnublog.png?v=1718008922');
     height: 400px;
     width: 400px;
     background-size: cover;
 
 }
 .box7{
-    background-image: url('src\\assets\\image4.jpg');
+    background-image: url('https://imgmedia.lbb.in/89967516_639698373480744_2500667414269416871_n_1589957713536.jpg');
     height: 400px;
     width: 400px;
     background-size: cover;
 
 }
 .box8{
-    background-image: url('src\\assets\\image5.jpg');
+    background-image: url('https://img.tatacliq.com/images/i22//437Wx649H/MP000000025039333_437Wx649H_202501141937051.jpeg');
     height: 400px;
     width: 400px;
     background-size: cover;
