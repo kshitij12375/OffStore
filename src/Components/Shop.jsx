@@ -9,14 +9,13 @@ import tshirt8 from '../assets/tshirt8.png';
 import cart from '../assets/cart.png';
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useCart } from './CartContext';
 const Shop = () => {
+  const { addToCart } = useCart();
   const navigate = useNavigate();
-  const [selectedData, setSelectedData] = useState(null);
-  
 
   const btnclick = (event) => {
     const clickedBtn = event.target;
-
     const value = clickedBtn.value;
     const imgElement = document.getElementById(value)?.querySelector("img");
     const src = imgElement?.getAttribute("src") || "";
@@ -24,14 +23,14 @@ const Shop = () => {
     const amount = document.getElementById(clickedBtn.getAttribute("data-amount"))?.innerText || "";
 
     const dataToSend = {
-      image :src,
-      description :description,
-      priceperitem :amount,
+      image: src,
+      description: description,
+      priceperitem: Number(amount),
     };
-    setSelectedData(dataToSend);
-    navigate("/cart", { state: dataToSend });
+
+    addToCart(dataToSend);
+    navigate("/cart");
   };
-   
    return(
      <>
        <div className="home1">
