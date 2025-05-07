@@ -40,7 +40,7 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 25px;
 }
 .gridd{
     display: grid;
@@ -69,19 +69,37 @@
     height: 400px;
     border: none;
     border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 .card img{
-    height: 400px;
-    width: 355px;
+    height: 300px;
+    width: 255px;
     border-radius: 10px;
 }
+.card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
 .details{
-    background-color: beige;
+    background-color: rgba(15, 15, 15, 0.9);
+   color: white;
     height: 60px;
+    font-family: sans-serif;
+    font-size: 18px;
+   
     box-sizing: border-box;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 .details :nth-child(1)
 {
     transform: translate(3px);
+}
+.cartbtn{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: gray;
+    width: 120px;
+    color: white;
 }

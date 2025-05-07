@@ -167,18 +167,18 @@
 
 }
 .box3{
-    background-image: url('https://cdn.mos.cms.futurecdn.net/GWFmQkkbZVeoSMntPxuvac.jpg');
+    background-image: url('https://i.pcmag.com/imagery/articles/00ijMqYS2fuQodplAoPHRTY-1..v1720718233.jpg');
     height: 300px;
     width: 550px;
     background-size: cover;
     transition: transform 0.3s ease;
 }
 .box3:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .box3 button{
-    background-color: #ebe9f0;
+    background-color: #716d7a;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
@@ -189,7 +189,11 @@
     height: 50px;
   margin-top: 240px;
   margin-left: 340px;
+  transition: transform 0.3s ease;
   
+}
+.box3 button:hover{
+    transform: scale(1.05);
 }
 .box4{
     background-image: url('https://cms-cdn.thesolesupplier.co.uk/2021/08/air-jordan-1-high-via-afewstore.jpeg.webp');
@@ -199,10 +203,11 @@
     transition: transform 0.3s ease;
 }
 .box4:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .box4 button{
-    background-color: #ebe9f0;
+    background-color: #716d7a;
+   
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
@@ -213,7 +218,11 @@
     height: 50px;
   margin-top: 240px;
   margin-left: 340px;
+  transition: transform 0.3s ease;
   
+}
+.box4 button:hover{
+    transform: scale(1.05);
 }
 
 .box5{
@@ -231,10 +240,10 @@
 
 }
 .box6:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .box6 button{
-    background-color: #ebe9f0;
+    background-color: #716d7a;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
@@ -245,7 +254,11 @@
     height: 43px;
   margin-top: 250px;
   margin-left: 310px;
+  transition: transform 0.3s ease;
   
+}
+.box6 button:hover{
+    transform: scale(1.05);
 }
 
 .box7{
@@ -257,10 +270,10 @@
 
 }
 .box7:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .box7 button{
-    background-color: #ebe9f0;
+    background-color: #716d7a;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
@@ -271,7 +284,11 @@
     height: 43px;
   margin-top: 250px;
   margin-left: 310px;
+  transition: transform 0.3s ease;
   
+}
+.box7 button:hover{
+    transform: scale(1.05);
 }
 
 .box8{
@@ -283,11 +300,12 @@
 
 
 }
+
 .box8:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 .box8 button{
-    background-color: #ebe9f0;
+    background-color: #716d7a;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
@@ -298,8 +316,12 @@
     height: 43px;
   margin-top: 250px;
   margin-left: 330px;
+  transition: transform 0.3s ease;
 
   
+}
+.box8 button:hover{
+    transform: scale(1.05);
 }
 
 
