@@ -9,15 +9,17 @@ import { useCart } from './CartContext';
 import { auth } from './firebase';
 const Shop = () => {
   const { addToCart } = useCart();
-  const navigate = useNavigate();
+  const navigate1 = useNavigate();
+  const navigate2 = useNavigate();
   const user = auth.currentUser;
-if (!user) {
-alert('Please login first to add items to your cart.');
-navigate('/login');
-return;
-}
+
 
   const btnclick = (event) => {
+    if (!user) {
+      alert('Please login first to add items to your cart.');
+      navigate1('/login');
+      return;
+      }
     const clickedBtn = event.target;
     const value = clickedBtn.value;
     const imgElement = document.getElementById(value)?.querySelector("img");
@@ -32,7 +34,7 @@ return;
     };
 
     addToCart(dataToSend);
-    navigate("/cart");
+    navigate2("/cart");
   };
    return(
      <>
