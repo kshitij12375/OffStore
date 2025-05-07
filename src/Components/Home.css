@@ -171,6 +171,10 @@
     height: 300px;
     width: 550px;
     background-size: cover;
+    transition: transform 0.3s ease;
+}
+.box3:hover{
+    transform: scale(1.05);
 }
 
 .box3 button{
@@ -192,6 +196,10 @@
     height: 300px;
     width: 550px;
     background-size: cover;
+    transition: transform 0.3s ease;
+}
+.box4:hover{
+    transform: scale(1.05);
 }
 .box4 button{
     background-color: #ebe9f0;
@@ -219,7 +227,11 @@
     height: 300px;
     width: 450px;
     background-size: cover;
+    transition: transform 0.3s ease;
 
+}
+.box6:hover{
+    transform: scale(1.05);
 }
 .box6 button{
     background-color: #ebe9f0;
@@ -241,7 +253,11 @@
     height: 300px;
     width: 450px;
     background-size: cover;
+    transition: transform 0.3s ease;
 
+}
+.box7:hover{
+    transform: scale(1.05);
 }
 .box7 button{
     background-color: #ebe9f0;
@@ -263,9 +279,12 @@
     height: 300px;
     width: 450px;
     background-size: cover;
-    transition: background-image 2s ease-in-out;
+    transition: transform 0.3s ease;
 
 
+}
+.box8:hover{
+    transform: scale(1.05);
 }
 .box8 button{
     background-color: #ebe9f0;

@@ -18,7 +18,14 @@ nav ul{
 .linknav{
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+   
 }
+.linknav:hover{
+    color: rgb(177, 179, 181);
+    text-decoration:solid;
+}
+
 #logo{
      width: 10%;
      height: 80%;
