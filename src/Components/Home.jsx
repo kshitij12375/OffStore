@@ -1,15 +1,21 @@
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 import cart from "../assets/cart.png";
 
 const Home = () => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/shop");
+    };
   return (
     <>
       <div className="home1">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"
-          data-bs-ride="ride"
+          data-bs-ride="carousel"
+          data-bs-interval="500"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -288,21 +294,23 @@ const Home = () => {
         </div>
         <div className="box2">
           <div className="box3">
-            <button>Shop Now</button>
+            
+
+            <button onClick={handleClick} > Shop Now</button>
           </div>
           <div className="box4">
-            <button>Shop Now</button>
+            <button onClick={handleClick} >Shop Now</button>
           </div>
         </div>
         <div className="box5">
           <div className="box6">
-            <button>Explore</button>
+            <button onClick={handleClick} >Explore</button>
           </div>
           <div className="box7">
-            <button>Explore</button>
+            <button onClick={handleClick} >Explore</button>
           </div>
           <div className="box8">
-            <button>Explore</button>
+            <button onClick={handleClick}  >Explore</button>
           </div>
         </div>
       </div>
