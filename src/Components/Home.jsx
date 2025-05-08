@@ -15,7 +15,7 @@ const Home = () => {
           id="carouselExampleAutoplaying"
           class="carousel slide"
           data-bs-ride="carousel"
-          data-bs-interval="500"
+          data-bs-interval="2000"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">

@@ -86,18 +86,18 @@ const Shop = () => {
         <div className="details">
           <div id='t1'>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
-            <div id='a1'>450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm1' data-text="t1" data-amount="a1">Add to cart</button><img src={cart} alt="" />
+            <div id='a1'>Rs.450</div>
+            <div ><button className='cartbtn' onClick={btnclick} value='cm1' data-text="t1" data-amount="a1">Add to cart</button>
             </div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div id='t2'>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
-           <div id="a2">460</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm2' data-text="t2" data-amount="a2">Add to cart</button><img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+           <div id="a2">Rs.460</div>
+            <div ><button className='cartbtn' onClick={btnclick} value='cm2' data-text="t2" data-amount="a2">Add to cart</button></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://images.unsplash.com/photo-1521498542256-5aeb47ba2b36?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTQ2MzI2NHx8ZW58MHx8fHx8" alt="" /></div>
@@ -105,42 +105,42 @@ const Shop = () => {
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.460</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
         <div className="card flexbox"><img src="https://media.istockphoto.com/id/182422958/photo/plain-white-t-shirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=1-XoGdX1DxIEo_4GI7CVAOuoRd1EJBA4CKQ1dt68Ccg=" alt="" /></div>
         <div className="card flexbox"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODQwMDgzODl8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
         <div className="card flexbox"><img src="https://images.unsplash.com/photo-1490168105446-f43395eb50b5?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTcyMjY1MHx8ZW58MHx8fHx8" alt="" /></div>
         <div className="card flexbox"><img src="https://images.unsplash.com/photo-1464278860589-b2ed64f87e22?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDI4NzA2fHxlbnwwfHx8fHw%3D" alt="" /></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
         <div className="details"><div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div></div>
           <div className="card flexbox" id='cm1'><img src="https://images.unsplash.com/photo-1512755051947-dea0029e93ad?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTE1MTA0MTh8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
         <div className="card flexbox" id='cm2'><img src="https://images.unsplash.com/photo-1527016021513-b09758b777bd?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTM2MTIxMXx8ZW58MHx8fHx8" alt="" /></div>
@@ -148,17 +148,17 @@ const Shop = () => {
           <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" />
+            <div >Add to cart
             </div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox" id='cm1'><img src="https://images.unsplash.com/photo-1581068505339-d155712f0add?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8bkt3OXFTSGUtcHd8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
@@ -167,17 +167,17 @@ const Shop = () => {
           <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" />
+            <div >Add to cart
             </div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox" id='cm1'><img src="https://images.unsplash.com/photo-1496637721836-f46d116e6d34?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTAyNTU2Mjl8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
@@ -186,17 +186,17 @@ const Shop = () => {
           <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" />
+            <div >Add to cart
             </div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         
@@ -206,17 +206,17 @@ const Shop = () => {
           <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" />
+            <div >Add to cart
             </div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Cream Embroidered Polo Slim Fit Shirt</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
       </div>
@@ -227,16 +227,16 @@ const Shop = () => {
           <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://fashions.stylevibe.in/wp-content/uploads/2024/06/item008.jpg" alt="" /></div>
@@ -245,16 +245,16 @@ const Shop = () => {
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-7-2.jpg"alt="" /></div>
@@ -263,16 +263,16 @@ const Shop = () => {
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
        <div className="card flexbox"><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-16-2.jpg"alt="" /></div>
@@ -281,16 +281,16 @@ const Shop = () => {
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdlTlUpoQgAPIq6I6FNfkF0TiHA9vpTckO3WgKMQ1SpG1mGF3g2gzOi5udqtQArNP-78XJ_at8AcddD5-mJJWwfl4TtCoCzxqxSAhTJUNxNBb_C34DFKrzOw"alt="" /></div>
@@ -299,16 +299,16 @@ const Shop = () => {
           <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://funkytradition.com/cdn/shop/files/0_2019-Fashion-Round-Sunglasses-Women-Brand-Designer-Luxury-Metal-Sun-Glasses-Classic-Retro-Outdoor-Eyewear-Oculos_0079d389-153f-48a8-8d3a-928126597c19.jpg?v=1723512244"alt="" /></div>
@@ -317,16 +317,16 @@ const Shop = () => {
           <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRl35UNY-gYqncfh_nokPzg4SDtYWA1I5Af59ycsyUAjiNiAhoOkfJR-F0BasogBBRNdhzsiO_Qjjzs1sarT0LX9xKNXDf_hpyJdrM2hHdwThyzwJpBPKnz"alt="" /></div>
@@ -335,16 +335,16 @@ const Shop = () => {
           <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="card flexbox"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQX7L1qRYDmB95S2lFXDUPpr5u-cdxClRKS49TH8At7CpDS4vtbGZkw8UG5gbXtlo1_6pCsab1MCX1AUhfTUz3Rr1vSy88g9LN7UCPUFiDxWsRT9oiSjdHfqg"alt="" /></div>
@@ -353,16 +353,16 @@ const Shop = () => {
           <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
         <div className="details">
         <div>Mast and Harbour Striped Top</div>
           <div className='gridd'>
             <div>Rs.450</div>
-            <div >Add to cart<img src={cart} alt="" /></div>
-            <div >4.7<img src={rating} alt="" /></div>
+            <div >Add to cart</div>
+            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
           </div>
         </div>
       </div>

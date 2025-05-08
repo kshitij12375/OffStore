@@ -15,8 +15,8 @@ const About = () => {
             <div className="image-container">
                 <img src={picture2} alt="aboutImage" />
                 <div className="image-text" >
-                    <h1 className="heading1">#KnowUs</h1>
-                    <p className="heading2">save more with coupons and upto 70% off</p>
+                    <h1 className="heading1">"Shop smart. Live better."</h1>
+                    <p className="heading2">"Luxury is not a price. It's an experience."</p>
                 </div>
             </div>
             <div className="image-container2">

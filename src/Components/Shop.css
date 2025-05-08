@@ -64,6 +64,8 @@
     height: 20px;
     width: 20px;
     vertical-align: bottom;
+    position: relative;
+    bottom: 3px;
 }
 .card{
     height: 400px;
@@ -90,6 +92,10 @@
     box-sizing: border-box;
     margin-bottom: 10px;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.details:hover{
+    transform: scale(1.05);
 }
 .details :nth-child(1)
 {
