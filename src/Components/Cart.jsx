@@ -19,6 +19,7 @@ const Cart = () => {
   };
 
   return (
+    <>
     <div>
       <h2 className="heading1">Your Cart</h2>
       <div className="heading2">({cartItems.length} Items)</div>
@@ -53,6 +54,10 @@ const Cart = () => {
         );
       })}
     </div>
+    <div className="total-amount">
+      
+      </div>
+      </>
   );
 };
 export default Cart;
