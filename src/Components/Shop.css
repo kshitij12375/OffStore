@@ -83,7 +83,7 @@
     transition: all 0.3s ease-in-out;
 }
 .details{
-    background-color: rgba(65, 168, 208, 0.9);
+    background-color: rgba(96, 113, 189, 0.9);
    color: rgb(17, 17, 17);
     height: 60px;
     font-family: sans-serif;
@@ -95,7 +95,7 @@
     transition: transform 0.3s ease-in-out;
     border-style: solid ;
     border-width: 2px;
-    
+
 }
 .details:hover{
     transform: scale(1.05);
@@ -105,10 +105,12 @@
     transform: translate(3px);
 }
 .cartbtn{
+  
+   border-style:none;
+    background-color: rgba(96, 113, 189, 0.9);
     border-style: solid;
-    border-width: 2px;
-    border-radius: 30px;
-    background-color: rgb(214, 221, 87);
+    border-width: 1.4hpx;
+   
     width: 120px;
     color: rgb(15, 15, 15);
 }
