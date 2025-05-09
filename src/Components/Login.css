@@ -1,5 +1,5 @@
 
-    /* Container */
+  
 .login-container {
     width: 500px;
     margin: 50px auto;
@@ -16,7 +16,7 @@
     color: #333;
   }
   
-  /* Input fields */
+  
   .input-field {
     margin-bottom: 15px;
     margin-right: 20px;
@@ -44,7 +44,7 @@
     border-color: #4CAF50;
   }
   
-  /* Button */
+  
   .login-button {
     padding: 10px 15px;
     background-color: #140658;
