@@ -20,7 +20,7 @@ const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="src\assets\9706877.jpg"
+                src="https://img.freepik.com/free-vector/hand-drawn-fashion-shop-pattern-background_23-2150849923.jpg?w=360"
                 className="d-block w-100"
                 alt="..."
               ></img>
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="src\assets\9701606.jpg"
+                src="https://img.freepik.com/free-vector/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg?semt=ais_hybrid&w=740"
                 className="d-block w-100"
                 alt="..."
               ></img>
@@ -42,7 +42,7 @@ const Home = () => {
 
             <div className="carousel-item">
               <img
-                src="src\assets\handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg"
+                src="https://img.freepik.com/free-photo/handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background_1258-155167.jpg?semt=ais_hybrid&w=740"
                 className="d-block w-100"
                 alt="..."
               ></img>
