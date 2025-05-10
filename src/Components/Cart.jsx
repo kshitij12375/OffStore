@@ -1,7 +1,7 @@
 import { useCart } from './CartContext';
 import React, { useState, useEffect } from 'react';
 import './Cart.css'; 
-
+import deletebtn from '../assets/deletebtn.png';
 const Cart = () => {
   const { cartItems, removeFromCart } = useCart();
   const [quantities, setQuantities] = useState([]);
@@ -42,7 +42,6 @@ const Cart = () => {
           <div className="subhead">Details</div>
           <div className="subhead">Quantity</div>
           <div className="subhead">Total</div>
-          <div className="subhead">Action</div>
         </div>
         <hr />
 
@@ -57,13 +56,12 @@ const Cart = () => {
               </div>
               <div className="description">
                 <p className="title">{item.description}</p>
-                <p className="price">Rs.{item.priceperitem}</p>
               </div>
               <div className="quantity-controls">
                 <button id="btn1"onClick={() => decreaseQuantity(index)}>-</button>
                 <span>{quantity}</span>
                 <button id="btn2"onClick={() => increaseQuantity(index)}>+</button>
-                   <button id="btn3" onClick={() => handleDelete(index)}>delete</button>
+                   <button id="btn3" onClick={() => handleDelete(index)}><img src ={deletebtn}></img></button>
               
               </div>
               
