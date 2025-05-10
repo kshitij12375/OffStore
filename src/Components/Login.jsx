@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,9 +15,20 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/'); 
-      // Redirect after login
-      
+      toast.success('Login successful!', {
+        position: 'top-center',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        
+      });
+
+      setTimeout(() => {
+        navigate('/');
+      }, 2000); 
     } catch (err) {
       setError('Invalid email or password');
     }
@@ -23,6 +36,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <ToastContainer />
       <h2>Login Here</h2>
 
       <div className="input-field">

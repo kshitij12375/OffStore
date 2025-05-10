@@ -7,7 +7,7 @@ const Cart = () => {
   const [quantities, setQuantities] = useState([]);
 
   useEffect(() => {
-    setQuantities(cartItems.map(() => 1)); // Sync quantities with cart
+    setQuantities(cartItems.map(() => 1)); 
   }, [cartItems]);
 
   const increaseQuantity = (index) => {

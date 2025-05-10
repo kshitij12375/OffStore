@@ -13,9 +13,17 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+      <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Succesfully signed-up
+    </div>
+    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
       navigate('/'); 
     } catch (err) {
-      setError('Signup failed. Email might already be in use.');
+      setError('Password should be at least 6 characters long');
     }
   };
 
