@@ -27,19 +27,11 @@ const Shop = () => {
         return;
       }
     const value = clickedBtn.value;
-<<<<<<< HEAD
-    const imgElement = document.getElementById(value)?.querySelector("img");
-    const src = imgElement?.getAttribute("src") || "";
-    const description = document.getElementById(clickedBtn.getAttribute("data-text"))?.innerText || "";
-    const str = document.getElementById(clickedBtn.getAttribute("data-amount"))?.innerText || "";
-    const number = str.match(/\d+/g); 
-=======
     const imgElement = document.getElementById(value).querySelector("img");
     const src = imgElement.getAttribute("src") || "";
     const description = document.getElementById(clickedBtn.getAttribute("data-text")).innerText || "";
     const str = document.getElementById(clickedBtn.getAttribute("data-amount")).innerText || "";
     const number = str.match(/\d+/g); // returns an array of matched numbers
->>>>>>> 0afcb48c9ca8218056e98097f7ab2ce7106ca4d9
     const result = number ? number.join("") : "";
     const amount = parseInt(result);
     const dataToSend = {
