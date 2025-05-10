@@ -8,6 +8,11 @@ import picture7 from '../assets/picture7.avif';
 import picture8 from '../assets/picture8.avif';
 import picture9 from '../assets/picture9.avif';
 import picture10 from '../assets/picture10.jpg';
+import mem1 from '../assets/mem1.jpg';
+import mem2 from '../assets/mem2.jpg';
+import mem3 from '../assets/mem3.jpg';
+import mem4 from '../assets/mem4.jpg';
+
 
 const About = () => { 
     return (
@@ -73,6 +78,47 @@ const About = () => {
                 </div>
                 </div>
                 </div>
+                <div className="team-container">
+                  <h2>Meet Our Team</h2>
+                  <div className="members-container">
+                  <div className="members-container1">
+                      <img src={mem1} alt="member1" />
+                      <div>
+                        <p>Kshitij Kumar Srivastava
+                          <br />
+                          Developer
+                        </p>  
+                      </div>
+                  </div>
+                  <div className="members-container1">
+                    <img src={mem2} alt="member2" />
+                      <div>
+                        <p>Akshat Vishnoi
+                          <br />
+                          Developer
+                        </p>  
+                      </div>
+                  </div>
+                  <div className="members-container1">
+                    <img src={mem3} alt="member1" />
+                      <div>
+                        <p>Sanskriti Singh
+                          <br />
+                          Developer
+                        </p>  
+                      </div>
+                  </div>
+                  <div className="members-container1">
+                    <img src={mem4} alt="member1" />
+                      <div>
+                        <p>Kavya Singh
+                          <br />
+                          Developer
+                        </p>  
+                      </div>
+                      </div> 
+                  </div>              
+                   </div>
                <div className="container4">
                   <img src={picture10} alt="image7" />
                   <div className="image-text3">

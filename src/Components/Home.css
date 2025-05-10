@@ -1,46 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
-.carousel-item{
+
+.carousel-item {
     height: 500px;
     width: 100%;
 }
-.Line{
+
+.Line {
     text-align: center;
     background-color: rgb(25, 24, 25);
     color: white;
     height: 60px;
 }
-.home2{
+
+.home2 {
     display: flex;
     flex-direction: row;
-    
+
     margin-top: 20px;
 }
-.card1{
+
+.card1 {
     width: 230px;
     margin: 16px;
     margin-left: 120px;
     height: 280px;
     background-color: rgb(240, 249, 249);
 }
-.card2{
+
+.card2 {
     height: 290px;
     width: 240px;
-    background-color:white;
+    background-color: white;
     border-radius: 20px;
     border-style: solid;
-    
-    border-color: rgb(181, 179, 179,0.2);
+
+    border-color: rgb(181, 179, 179, 0.2);
     border-width: 2px;
 }
-.card2:hover{
+
+.card2:hover {
     background-color: rgb(229, 234, 234);
     transition: background-color 0.3s ease-in-out;
 }
-.card2 img{
+
+.card2 img {
 
     width: 220px;
     height: 220px;
@@ -48,7 +55,7 @@
     padding-left: 26px;
 }
 
-.text3{
+.text3 {
     font-size: 40px;
     font-weight: bold;
     color: rgb(25, 24, 25);
@@ -57,7 +64,8 @@
     bottom: 900px;
     right: 350px;
 }
-.text1{
+
+.text1 {
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -65,7 +73,8 @@
     position: relative;
     bottom: 600px;
 }
-.text2{
+
+.text2 {
     font-size: 30px;
     font-weight: bold;
     color: rgb(232, 227, 227);
@@ -73,22 +82,25 @@
     position: relative;
     bottom: 900px;
 }
+
 .card3 {
     height: 100px;
     width: 220px;
 
 
 }
-.card3 p{
+
+.card3 p {
     margin: -5px;
     margin-left: 10px;
 }
-.home3{
+
+.home3 {
     height: 1020px;
     background-color: white
-
 }
-.footer{
+
+.footer {
     height: 400px;
     background-color: rgb(25, 24, 25);
     display: flex;
@@ -96,6 +108,7 @@
     justify-content: space-between;
     color: white;
 }
+
 .footer1 {
     display: flex;
     justify-content: space-around;
@@ -104,7 +117,9 @@
     flex-wrap: wrap;
 }
 
-.footer-links, .footer-contact, .footer-social {
+.footer-links,
+.footer-contact,
+.footer-social {
     margin: 60px;
     max-width: 200px;
 }
@@ -145,120 +160,154 @@
     color: #ccc;
 }
 
-.box1{
+.box1 {
     text-align: center;
     height: 160px;
-   background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/Shankhadip/MayART25/MAY25_GW_PC_Hero_H1_Sale-is-live_2X._CB795056097_.jpg");
-   background-size: cover;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/Shankhadip/MayART25/MAY25_GW_PC_Hero_H1_Sale-is-live_2X._CB795056097_.jpg");
+    background-size: cover;
 
 
 }
-.box2{
+
+.box2 {
 
     margin: 40px;
     margin-bottom: 60px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
-.box3{
-    background-image: url('https://i.pcmag.com/imagery/articles/00ijMqYS2fuQodplAoPHRTY-1..v1720718233.jpg');
+
+.box3 {
+    background-image: url('https://img.freepik.com/premium-photo/two-smiling-girls-posing-scarf-hat-brown-background_2221-4273.jpg?ga=GA1.1.1780867812.1744907574&semt=ais_hybrid&w=740');
     height: 300px;
     width: 550px;
     background-size: cover;
     transition: transform 0.3s ease;
 }
-.box3:hover{
+
+.box3:hover {
     transform: scale(1.01);
 }
-
-.box3 button{
-    background-color: #716d7a;
+.box3 p{
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: roboto slab;
+}
+.box3 button {
+    background-color: #f1ddbf;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
-  font-weight: bold;
+    border-radius: 8px;
+    font-weight: bold;
     width: 180px;
     height: 50px;
-  margin-top: 240px;
-  margin-left: 340px;
-  transition: transform 0.3s ease;
-  
+    margin-top: 80px;
+    margin-left: 340px;
+    transition: transform 0.3s ease;
+
 }
-.box3 button:hover{
+
+.box3 button:hover {
     transform: scale(1.05);
 }
-.box4{
+
+.box4 {
     background-image: url('https://cms-cdn.thesolesupplier.co.uk/2021/08/air-jordan-1-high-via-afewstore.jpeg.webp');
     height: 300px;
     width: 550px;
     background-size: cover;
     transition: transform 0.3s ease;
 }
-.box4:hover{
+
+.box4:hover {
     transform: scale(1.01);
 }
-.box4 button{
-    background-color: #716d7a;
-   
+.box4 p{
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 390px;
+    font-family: roboto slab;
+}
+
+.box4 button {
+    background-color: #e2e2e4;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
     border-width: 2px;
+    border-radius: 8px;
     border-color: black;
-  font-weight: bold;
+    font-weight: bold;
     width: 180px;
     height: 50px;
-  margin-top: 240px;
-  margin-left: 340px;
-  transition: transform 0.3s ease;
-  
+    margin-top: 40px;
+    margin-left: 340px;
+    transition: transform 0.3s ease;
+
 }
-.box4 button:hover{
+
+.box4 button:hover {
     transform: scale(1.05);
 }
 
-.box5{
+.box5 {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.box6{
-    background-image: url('https://thevishnu.in/cdn/shop/articles/vishnublog.png?v=1718008922');
+
+.box6 {
+    background-image: url('https://img.freepik.com/free-photo/young-woman-beautiful-dress_1303-17511.jpg?ga=GA1.1.1780867812.1744907574&semt=ais_hybrid&w=740');
     height: 300px;
     width: 450px;
     background-size: cover;
     transition: transform 0.3s ease;
 
 }
-.box6:hover{
+
+.box6:hover {
     transform: scale(1.01);
 }
-.box6 button{
-    background-color: #716d7a;
+.box6 p{
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 250px;
+    font-family: roboto slab;
+}
+.offer{
+    font-weight: 200;
+}
+.box6 button {
+    background-color: #f8be8e;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
-  font-weight: bold;
+    border-radius: 8px;
+    font-weight: bold;
     width: 120px;
     height: 43px;
-  margin-top: 250px;
-  margin-left: 310px;
-  transition: transform 0.3s ease;
-  
+    margin-top: 15px;
+    margin-left: 290px;
+    transition: transform 0.3s ease;
+
 }
-.box6 button:hover{
+
+.box6 button:hover {
     transform: scale(1.05);
 }
 
-.box7{
+.box7 {
     background-image: url('https://imgmedia.lbb.in/89967516_639698373480744_2500667414269416871_n_1589957713536.jpg');
     height: 300px;
     width: 450px;
@@ -266,30 +315,41 @@
     transition: transform 0.3s ease;
 
 }
-.box7:hover{
+
+.box7:hover {
     transform: scale(1.01);
 }
-.box7 button{
-    background-color: #716d7a;
+.box7 p{
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: roboto slab;
+}
+
+.box7 button {
+    background-color: #a1ddf7;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
-  font-weight: bold;
+    border-radius: 8px;
+    font-weight: bold;
     width: 120px;
     height: 43px;
-  margin-top: 250px;
-  margin-left: 310px;
-  transition: transform 0.3s ease;
-  
+    margin-top: 160px;
+    margin-left: 310px;
+    transition: transform 0.3s ease;
+
 }
-.box7 button:hover{
+
+.box7 button:hover {
     transform: scale(1.05);
 }
 
-.box8{
-    background-image: url('https://img.tatacliq.com/images/i22//437Wx649H/MP000000025039333_437Wx649H_202501141937051.jpeg');
+.box8 {
+    background-image: url('https://img.freepik.com/premium-photo/man-suit-concrete-wall-background_1384-259.jpg?ga=GA1.1.1780867812.1744907574&semt=ais_hybrid&w=740');
     height: 300px;
     width: 450px;
     background-size: cover;
@@ -298,26 +358,33 @@
 
 }
 
-.box8:hover{
+.box8:hover {
     transform: scale(1.01);
 }
-.box8 button{
-    background-color: #716d7a;
+.box8 p{
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 200px;
+    font-family: roboto slab;
+}
+
+.box8 button {
+    background-color: #b7b7b7;
     color: rgb(23, 23, 23);
     font-size: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
-  font-weight: bold;
+    border-radius: 8px;
+    font-weight: bold;
     width: 120px;
     height: 43px;
-  margin-top: 250px;
-  margin-left: 330px;
-  transition: transform 0.3s ease;
-
-  
+    margin-top: 110px;
+    margin-left: 300px;
+    transition: transform 0.3s ease;
 }
-.box8 button:hover{
+.box8 button:hover {
     transform: scale(1.05);
 }
 

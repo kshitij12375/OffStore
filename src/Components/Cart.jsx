@@ -34,44 +34,44 @@ const Cart = () => {
 
   return (
     <>
-      <div>
-        <h2 className="heading1">Your Cart</h2>
-        <div className="heading2">({cartItems.length} Items)</div>
-        <div className="heading3">
-          <div className="subhead">Items</div>
-          <div className="subhead">Details</div>
-          <div className="subhead">Quantity</div>
-          <div className="subhead">Total</div>
-          <div className="subhead">Action</div>
-        </div>
-        <hr />
+    <div>
+      <h2 className="heading1">Your Cart</h2>
+      <div className="heading2">({cartItems.length} Items)</div>
+      <div className="heading3">
+        <div className="subhead">Items</div>
+        <div className="subhead">Details</div>
+        <div className="subhead">Quantity</div>
+        <div className="subhead1">Total</div>
+      </div>
+      <hr />
 
         {cartItems.map((item, index) => {
           const quantity = quantities[index];
           const totalPrice = item.priceperitem * quantity;
 
-          return (
-            <div key={index} className="item-details">
-              <div className="item">
-                <img src={item.image} alt="item" className="photo" />
-              </div>
-              <div className="description">
-                <p className="title">{item.description}</p>
-                <p className="price">Rs.{item.priceperitem}</p>
-              </div>
-              <div className="quantity-controls">
-                <button id="btn1"onClick={() => decreaseQuantity(index)}>-</button>
-                <span>{quantity}</span>
-                <button id="btn2"onClick={() => increaseQuantity(index)}>+</button>
-                <img id ="img3"onClick={() => handleDelete(index)} src="https://img.icons8.com/fluent-systems-filled/512/FA5252/filled-trash.png"></img>
-              
-              </div>
-              
-              <div className="totalPrice">Rs.{totalPrice}</div>
-             
+        return (
+          <div key={index} className="item-details">
+            <div className="item">
+              <img src={item.image} alt="item"/>
             </div>
-          );
-        })}
+            <div className="description">
+              <p >{item.description}
+                <br />
+                 Rs.{item.priceperitem}
+             </p>
+            </div>
+            <div className="quantity-controls">
+              <button onClick={() => decreaseQuantity(index)}>-</button>
+              <span>{quantity}</span>
+              <button onClick={() => increaseQuantity(index)}>+</button>
+            </div>
+            <div className="totalPrice">Rs.{totalPrice}</div>
+          </div>
+        );
+      })}
+    </div>
+    <div className="total-amount">
+      
       </div>
 
       <div className="total-amount">

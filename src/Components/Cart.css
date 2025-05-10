@@ -29,38 +29,39 @@
     font-size: 20px;
 
 }
+.subhead1{
+    padding-right: 50px;
+}
 .item-details{
     display:flex;
     flex-direction: row;
-    gap:330px
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-top: 20px;
 }
 .item{
-    margin-left:26 px;
-
-}
-.photo
-{
-    height: 250px;
-    margin-left:26px;
-}
-.title{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    flex: 1;
+  padding: 0 10px;
+   }
+.item img{
+    width: 120px;
+  height: 150px;
+  object-fit: cover;
 }
 .description{
-    padding-left: 50 px;
-    margin-left: 60 px;
+    flex: 1;
+  padding: 0 10px;
 }
-.price{
-    font-weight: bold;
-    padding-top: 0px;
+.description p{
+    max-width: 250px;
+    line-height: 1.5;
+    font-weight: 600;
 }
+
 .quantity-controls {
     display: flex;
-    width: 180px;
-    margin-top: 20px;
-    margin-right: 35px;
+    flex: 1;
+  padding: 0 10px;
     
   }
  #img3{

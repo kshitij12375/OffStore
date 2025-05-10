@@ -235,7 +235,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="details" id='tw2'>
-        <div>Casual Bell Sleeves Embroidered  Top</div>
+        <div>Casual Bell Sleeves Embroidered Top</div>
           <div className='gridd'>
             <div id='aw2'>Rs.699</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw2' data-text="tw2" data-amount="aw2">Add to cart</button></div>
@@ -245,7 +245,7 @@ const Shop = () => {
         <div className="card flexbox" id='cw3'><img src="https://fashions.stylevibe.in/wp-content/uploads/2024/06/item008.jpg" alt="" /></div>
         <div className="card flexbox" id='cw4'><img src="https://fashions.stylevibe.in/wp-content/uploads/2024/06/item002.jpg" alt="" /></div>
         <div className="details" id='tw3'>
-        <div>Cupid's Gem Ring for Women Jewellery </div>
+        <div>Copper Ring for Women Jewellery </div>
           <div className='gridd'>
             <div id='aw3'>Rs.549</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw3' data-text="tw3" data-amount="aw3">Add to cart</button></div>
@@ -281,7 +281,7 @@ const Shop = () => {
        <div className="card flexbox" id='cw7'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-16-2.jpg"alt="" /></div>
         <div className="card flexbox" id='cw8'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-13-2.jpg"alt="" /></div>
         <div className="details" id='tw7'>
-        <div>Oversized Fit Solid Spread Collar Shirt</div>
+        <div>Women Oversized Fit Solid Casual Shirt</div>
           <div className='gridd'>
             <div id='aw7'>Rs. 1919</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw7' data-text="tw7" data-amount="aw7">Add to cart</button></div>
@@ -289,7 +289,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="details" id='tw8'>
-        <div> Regular Fit Floral Print Curved Collar Shirt</div>
+        <div>Women Regular Floral Print Casual Shirt</div>
           <div className='gridd'>
             <div id='aw8'>Rs.1945</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw8' data-text="tw8" data-amount="aw8">Add to cart</button></div>
@@ -299,7 +299,7 @@ const Shop = () => {
         <div className="card flexbox" id='cw9'><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdlTlUpoQgAPIq6I6FNfkF0TiHA9vpTckO3WgKMQ1SpG1mGF3g2gzOi5udqtQArNP-78XJ_at8AcddD5-mJJWwfl4TtCoCzxqxSAhTJUNxNBb_C34DFKrzOw"alt="" /></div>
         <div className="card flexbox" id='cw10'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRh-cAjoZMIsqqxt2ycbqQBiWHmgl-29FaZikJx2UvvzX8yAW7Lbo52ULGZHsAb1eOtBOYTrM4Dh9C7ojjC0WaAkr0ihVeJfZqcop2VXZWRV-YGf8EZAz7C" alt="" /></div>
         <div className="details" id='tw9'>
-          <div>OGL-09 Shoes for Trendy Sneakers </div>
+          <div>OGL-09 Casual Shoes for Women </div>
           <div className='gridd'>
             <div id='aw9'>Rs.1999</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw9' data-text="tw9" data-amount="aw9">Add to cart</button></div>
@@ -307,7 +307,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="details" id='tw10'>
-        <div>Mesh Stylish Casual Comfort Sneakers </div>
+        <div>Stylish Comfort Sneakers For Women</div>
           <div className='gridd'>
             <div id='aw10'>Rs.2250</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw10' data-text="tw10" data-amount="aw10">Add to cart</button></div>
@@ -317,7 +317,7 @@ const Shop = () => {
         <div className="card flexbox" id='cw11'><img src="https://funkytradition.com/cdn/shop/files/0_2019-Fashion-Round-Sunglasses-Women-Brand-Designer-Luxury-Metal-Sun-Glasses-Classic-Retro-Outdoor-Eyewear-Oculos_0079d389-153f-48a8-8d3a-928126597c19.jpg?v=1723512244"alt="" /></div>
         <div className="card flexbox" id='cw12'><img src="https://sunski.com/cdn/shop/files/sunski_polarized_sunglasses_baia_24_1400x1100.jpg?v=1721341129" alt="" /></div>
         <div className="details" id='tw11'>
-          <div>Gradient,UV Protection Sunglasses</div>
+          <div> UV Protection Wayfarer Sunglasses</div>
           <div className='gridd'>
             <div id='aw11'>Rs.724</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw11' data-text="tw11" data-amount="aw11">Add to cart</button></div>
@@ -325,7 +325,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="details" id='tw12'>
-        <div>Lenskart UV Protection Cat-eye Sunglasses </div>
+        <div> UV Protection Cat-eye Sunglasses </div>
           <div className='gridd'>
             <div id='aw12'>Rs.599</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw12' data-text="tw12" data-amount="aw12">Add to cart</button></div>
@@ -335,7 +335,7 @@ const Shop = () => {
         <div className="card flexbox" id='cw13'><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRl35UNY-gYqncfh_nokPzg4SDtYWA1I5Af59ycsyUAjiNiAhoOkfJR-F0BasogBBRNdhzsiO_Qjjzs1sarT0LX9xKNXDf_hpyJdrM2hHdwThyzwJpBPKnz"alt="" /></div>
         <div className="card flexbox" id='cw13'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRws8XL7D0q9LXHrOsmLrPbKXj0GL8IkdX7GfFVoAzDfK9gLM9-Nt1hKPs6kkQXFV4USn5UvK7FM9hUZdX0pw8BhMj11-f_hTIGJU-GykfsvTSJwZ2dNYZxmg" alt="" /></div>
         <div className="details" id='tw13'>
-          <div>Analog Watch - For Women VH000008D</div>
+          <div>Analog Watch - For Women </div>
           <div className='gridd'>
             <div id='aw13'>Rs.1450</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw13' data-text="tw13" data-amount="aw13">Add to cart</button></div>
@@ -353,7 +353,7 @@ const Shop = () => {
         <div className="card flexbox" id='cw15'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQX7L1qRYDmB95S2lFXDUPpr5u-cdxClRKS49TH8At7CpDS4vtbGZkw8UG5gbXtlo1_6pCsab1MCX1AUhfTUz3Rr1vSy88g9LN7UCPUFiDxWsRT9oiSjdHfqg"alt="" /></div>
         <div className="card flexbox" id='cw16'><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGHbg9rysF-ev3QU9QUioBwDUq0D4jodklJl3Zh8qsxZ_PojMY9pHL-Ay_5GpNFxKuHB8iH-oYT3HSp3C8PEpyFyoK08fHd4Nh4rzeoS0d" alt="" /></div>
         <div className="details" id='tw15'>
-          <div>Stylish Trending Sneakers For (White , 5)</div>
+          <div>Stylish Trending Sneakers For Women</div>
           <div className='gridd'>
             <div id='aw15'>Rs.3199</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw15' data-text="tw15" data-amount="aw15">Add to cart</button></div>
@@ -361,7 +361,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="details" id='tw16'>
-        <div>CAMP-CLINT Sneakers For (White , 7)</div>
+        <div>CAMP-CLINT Sneakers For Women</div>
           <div className='gridd'>
             <div id='aw16'>Rs. 2999</div>
             <div ><button className='cartbtn' onClick={btnclick} value='cw16' data-text="tw16" data-amount="aw16">Add to cart</button></div>

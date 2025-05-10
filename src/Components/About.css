@@ -1,6 +1,6 @@
 .body{
     margin: 0px;
-    
+    height: 2000px;
 }
 .image-container{
   position: relative;
@@ -175,6 +175,34 @@ font-weight: 500;
 .label6 p{
 font-size: 14px;
 font-weight: 500;
+}
+.team-container{
+  margin-top: 40px;
+  text-align: center;
+}
+.members-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.members-container1{
+  height: 300px;
+  width: 250px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+   
+}
+.members-container1 img{
+  height: 220px;
+  width: 200px;
+  padding-top: 20px;
+}
+.members-container1 p{
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
 }
 .container4{
   position: relative;

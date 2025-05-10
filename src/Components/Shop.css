@@ -83,8 +83,8 @@
     transition: all 0.3s ease-in-out;
 }
 .details{
-    background-color: rgba(96, 113, 189);
-   color: rgb(17, 17, 17);
+    background-color: rgb(1, 7, 87);
+   color: rgb(255, 254, 254);
     height: 60px;
     font-family: sans-serif;
     font-size: 18px;
@@ -110,9 +110,10 @@
 .cartbtn{
   
    border-style:none;
-    background-color: rgba(96, 113, 189);
-    border-width: 2px;
+    background-color: rgb(243, 244, 247);
+    border-width: 1px;
     border-style: solid;
+    border-radius: 6px;
 
       
    
