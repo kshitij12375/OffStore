@@ -58,19 +58,23 @@
 }
 .quantity-controls {
     display: flex;
-    width: 120px;
+    width: 180px;
     margin-top: 20px;
     margin-right: 35px;
     
   }
+ #img3{
+    width: 45px;
+    height: 40px;
+ }
   
   .quantity-controls button {
-    width: 35px;
+    width: 55px;
     height: 35px;
     font-size: 20px;
     margin: 0 10px;
     cursor: pointer;
-    background-color: brown ;
+    background-color: rgb(247, 15, 15) ;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: white;
@@ -88,5 +92,9 @@
     width: 120px;
     font-weight: bold;
     margin-top: 20px;
+ }
+ .total-amount{
+    margin-left: 90%;
+
  }
  

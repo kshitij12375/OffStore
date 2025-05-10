@@ -96,6 +96,11 @@
     border-style: solid ;
     border-width: 2px;
 
+
+}
+.details:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .details :nth-child(1)
