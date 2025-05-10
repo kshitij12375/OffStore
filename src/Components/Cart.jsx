@@ -27,7 +27,7 @@ const Cart = () => {
         <div className="subhead">Items</div>
         <div className="subhead">Details</div>
         <div className="subhead">Quantity</div>
-        <div className="subhead">Total</div>
+        <div className="subhead1">Total</div>
       </div>
       <hr />
 
@@ -38,11 +38,13 @@ const Cart = () => {
         return (
           <div key={index} className="item-details">
             <div className="item">
-              <img src={item.image} alt="item" className="photo" />
+              <img src={item.image} alt="item"/>
             </div>
             <div className="description">
-              <p className="title">{item.description}</p>
-              <p className="price">Rs.{item.priceperitem}</p>
+              <p >{item.description}
+                <br />
+                 Rs.{item.priceperitem}
+             </p>
             </div>
             <div className="quantity-controls">
               <button onClick={() => decreaseQuantity(index)}>-</button>
