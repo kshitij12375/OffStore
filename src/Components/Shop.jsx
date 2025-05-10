@@ -26,7 +26,7 @@ const Shop = () => {
     const src = imgElement?.getAttribute("src") || "";
     const description = document.getElementById(clickedBtn.getAttribute("data-text"))?.innerText || "";
     const str = document.getElementById(clickedBtn.getAttribute("data-amount"))?.innerText || "";
-    const number = str.match(/\d+/g); // returns an array of matched numbers
+    const number = str.match(/\d+/g); 
     const result = number ? number.join("") : "";
     const amount = parseInt(result);
     const dataToSend = {
@@ -45,12 +45,21 @@ const Shop = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src="src\assets\9706877.jpg" className="d-block w-100" alt="..."></img>
+                <div className="carousel-caption">
+                <p>Step into your power with fashion <br /> that turns heads, breaks norms,  <br />and defines your vibe</p>
+              </div>
             </div>
             <div className="carousel-item">
               <img src="src\assets\9701606.jpg" className="d-block w-100" alt="..."></img>
+              <div className="carousel-caption" style={{ margin: '0px 0px 0px 350px' }} >
+                <p style={{ color: 'white' }}>Where classic elegance <br />meets modern fashion flair</p>
+              </div>
             </div>
             <div className="carousel-item">
               <img src="src\assets\handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg" className="d-block w-100" alt="..."></img>
+               <div className="carousel-caption">
+                <p>Effortless fashion for <br /> everyday statement looks</p>
+              </div>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

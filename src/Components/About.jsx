@@ -86,7 +86,7 @@ const About = () => {
                       <div>
                         <p>Kshitij Kumar Srivastava
                           <br />
-                          Developer
+                          Lead Developer
                         </p>  
                       </div>
                   </div>
@@ -95,7 +95,7 @@ const About = () => {
                       <div>
                         <p>Akshat Vishnoi
                           <br />
-                          Developer
+                          Lead Developer
                         </p>  
                       </div>
                   </div>

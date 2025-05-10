@@ -24,6 +24,10 @@ const Home = () => {
                 className="d-block w-100"
                 alt="..."
               ></img>
+              <div className="carousel-caption">
+                <p>Step into your power with fashion <br /> that turns heads, breaks norms,  <br />and defines your vibe</p>
+              </div>
+             
             </div>
             <div className="carousel-item">
               <img
@@ -31,6 +35,9 @@ const Home = () => {
                 className="d-block w-100"
                 alt="..."
               ></img>
+              <div className="carousel-caption" style={{ margin: '0px 0px 0px 350px' }} >
+                <p style={{ color: 'white' }}>Where classic elegance <br />meets modern fashion flair</p>
+              </div>
             </div>
 
             <div className="carousel-item">
@@ -39,6 +46,9 @@ const Home = () => {
                 className="d-block w-100"
                 alt="..."
               ></img>
+              <div className="carousel-caption">
+                <p>Effortless fashion for <br /> everyday statement looks</p>
+              </div>
             </div>
           </div>
           <button
