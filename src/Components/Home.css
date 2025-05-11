@@ -414,3 +414,134 @@
 
 
 }
+/* Mobile: up to 600px */
+@media only screen and (max-width: 600px) {
+  .carousel-item {
+    height: 180px;
+  }
+
+  .carousel-caption p {
+    font-size: 10px;
+    margin-bottom: 70px;
+  }
+
+  .home2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card1, .card2 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .box2, .box5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box3, .box4, .box6, .box7, .box8 {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .box3 p, .box4 p, .box6 p, .box7 p, .box8 p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .box3 button, .box4 button, .box6 button, .box7 button, .box8 button {
+    width: 120px;
+    font-size: 14px;
+    margin: 15px 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .footer1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .footer-links, .footer-contact, .footer-social {
+    margin-bottom: 20px;
+  }
+
+  .text1, .text2, .text3 {
+    position: static;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Tablet: 601px–900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .carousel-item {
+    height: 300px;
+  }
+
+  .home2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card1, .card2 {
+    width: 45%;
+    height: auto;
+  }
+
+  .box2, .box5 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box3, .box4, .box6, .box7, .box8 {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box3 p, .box4 p, .box6 p, .box7 p, .box8 p {
+    font-size: 20px;
+  }
+
+  .box3 button, .box4 button, .box6 button, .box7 button, .box8 button {
+    width: 140px;
+    font-size: 15px;
+    margin: 20px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    height: auto;
+  }
+
+  .footer1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .text1, .text2, .text3 {
+    font-size: 26px;
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
