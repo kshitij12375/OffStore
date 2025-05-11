@@ -20,7 +20,7 @@ const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="src\assets\9706877.jpg"
+                src="9706877.jpg"
                 className="d-block w-100"
                 alt="..."
               ></img>
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="src\assets\9701606.jpg"
+                src="9701606.jpg"
                 className="d-block w-100"
                 alt="..."
               ></img>
@@ -42,7 +42,7 @@ const Home = () => {
 
             <div className="carousel-item">
               <img
-                src="src\assets\handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg"
+                src="handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg"
                 className="d-block w-100"
                 alt="..."
               ></img>
