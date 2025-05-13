@@ -1,37 +1,262 @@
 import './Shop.css';
-
-import rating from '../assets/rating.png';
-
-import cart from '../assets/cart.png';
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from './CartContext';
 import { auth } from './firebase';
+
 const Shop = () => {
   const { addToCart } = useCart();
   const navigate1 = useNavigate();
   const navigate2 = useNavigate();
   const user = auth.currentUser;
 
+  const mensProducts = [
+    {
+      id: 'cm1',
+      image: "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7",
+      title: "Men's Casual Denim Shirt",
+      price: 700,
+      rating: 4.7
+    },
+    {
+      id: 'cm2',
+      image: "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4",
+      title: "Men's Casual Check Shirt",
+      price: 460,
+      rating: 4.7
+    },
+    {
+      id: 'cm3',
+      image: "https://images.unsplash.com/photo-1521498542256-5aeb47ba2b36",
+      title: "Round Neck Slimfit Tshirt",
+      price: 460,
+      rating: 4.7
+    },
+    {
+      id: 'cm4',
+      image: "https://images.unsplash.com/photo-1571455786673-9d9d6c194f90",
+      title: "Round Neck Slimfit Tshirt",
+      price: 450,
+      rating: 4.7
+    },
+    {
+      id: 'cm5',
+      image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTmsQiwrSfDn-DhUky5ExNE8_2-Mw2v1RnY6KJ0yqEU1LvqTuY1lMuzedLNegJ8fND3xdRoj2Xh5sP7z93_ccsuBeeLvdQawLzHnJ05CjIw-zedkrSEZ0jt",
+      title: "Solid White Round Neck Tshirt",
+      price: 350,
+      rating: 4.7
+    },
+    {
+      id: 'cm6',
+      image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+      title: "Men's Fashion Trendy Tshirt",
+      price: 650,
+      rating: 4.7
+    },
+    {
+      id: 'cm7',
+      image: "https://images.unsplash.com/photo-1490168105446-f43395eb50b5",
+      title: "Men Lace up Sneaker Shoes",
+      price: 1450,
+      rating: 4.7
+    },
+    {
+      id: 'cm8',
+      image: "https://images.unsplash.com/photo-1464278860589-b2ed64f87e22",
+      title: "Men Leather Sneaker Shoes",
+      price: 2559,
+      rating: 4.7
+    },
+    {
+      id: 'cm9',
+      image: "https://images.unsplash.com/photo-1512755051947-dea0029e93ad",
+      title: "Mens Trendy Overcoat Jacket",
+      price: 3280,
+      rating: 4.7
+    },
+    {
+      id: 'cm10',
+      image: "https://images.unsplash.com/photo-1527016021513-b09758b777bd",
+      title: "Mens Trendy Denim Shirt",
+      price: 1380,
+      rating: 4.7
+    },
+    {
+      id: 'cm11',
+      image: "https://images.unsplash.com/photo-1581068505339-d155712f0add",
+      title: "Mens Stylish Street Shoes",
+      price: 1899,
+      rating: 4.7
+    },
+    {
+      id: 'cm12',
+      image: "https://images.unsplash.com/photo-1619466122087-e1ff06cf234b",
+      title: "Mens Stylish Street Shoes",
+      price: 1899,
+      rating: 4.7
+    },
+    {
+      id: 'cm13',
+      image: "https://images.unsplash.com/photo-1496637721836-f46d116e6d34",
+      title: "100% UV protected Wayfarer Sunglasses",
+      price: 750,
+      rating: 4.7
+    },
+    {
+      id: 'cm14',
+      image: "https://images.unsplash.com/photo-1563891217861-7924b471afb3",
+      title: "UV protected Trendy Sunglasses",
+      price: 450,
+      rating: 4.7
+    },
+    {
+      id: 'cm15',
+      image: "https://images.unsplash.com/photo-1586882829491-b81178aa622e",
+      title: "Men's Magnum casual Sneakers",
+      price: 3750,
+      rating: 4.7
+    },
+    {
+      id: 'cm16',
+      image: "https://images.unsplash.com/photo-1588099768550-4014589e03e0",
+      title: "Men suede Sneaker shoes",
+      price: 3450,
+      rating: 4.7
+    }
+  ];
+
+  const womensProducts = [
+    {
+      id: 'cw1',
+      image: "https://images.unsplash.com/photo-1634412327877-836164201d16",
+      title: "Women Regular Fit Solid Formal Shirt",
+      price: 999,
+      rating: 4.7
+    },
+    {
+      id: 'cw2',
+      image: "https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f8.jpg",
+      title: "Casual Bell Sleeves Embroidered Top",
+      price: 699,
+      rating: 4.7
+    },
+    {
+      id: 'cw3',
+      image: "https://fashions.stylevibe.in/wp-content/uploads/2024/06/item008.jpg",
+      title: "Copper Ring for Women Jewellery",
+      price: 549,
+      rating: 4.7
+    },
+    {
+      id: 'cw4',
+      image: "https://fashions.stylevibe.in/wp-content/uploads/2024/06/item002.jpg",
+      title: "Premium Helios Danglers For Women",
+      price: 499,
+      rating: 4.7
+    },
+    {
+      id: 'cw5',
+      image: "https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-7-2.jpg",
+      title: "Women Wedges Sandal",
+      price: 666,
+      rating: 4.7
+    },
+    {
+      id: 'cw6',
+      image: "https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-7-1.jpg",
+      title: "Women Wedges Sandal",
+      price: 777,
+      rating: 4.7
+    },
+    {
+      id: 'cw7',
+      image: "https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-16-2.jpg",
+      title: "Women Oversized Fit Solid Casual Shirt",
+      price: 1919,
+      rating: 4.7
+    },
+    {
+      id: 'cw8',
+      image: "https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-13-2.jpg",
+      title: "Women Regular Floral Print Casual Shirt",
+      price: 1945,
+      rating: 4.7
+    },
+    {
+      id: 'cw9',
+      image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdlTlUpoQgAPIq6I6FNfkF0TiHA9vpTckO3WgKMQ1SpG1mGF3g2gzOi5udqtQArNP-78XJ_at8AcddD5-mJJWwfl4TtCoCzxqxSAhTJUNxNBb_C34DFKrzOw",
+      title: "OGL-09 Casual Shoes for Women",
+      price: 1999,
+      rating: 4.7
+    },
+    {
+      id: 'cw10',
+      image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRh-cAjoZMIsqqxt2ycbqQBiWHmgl-29FaZikJx2UvvzX8yAW7Lbo52ULGZHsAb1eOtBOYTrM4Dh9C7ojjC0WaAkr0ihVeJfZqcop2VXZWRV-YGf8EZAz7C",
+      title: "Stylish Comfort Sneakers For Women",
+      price: 2250,
+      rating: 4.7
+    },
+    {
+      id: 'cw11',
+      image: "https://funkytradition.com/cdn/shop/files/0_2019-Fashion-Round-Sunglasses-Women-Brand-Designer-Luxury-Metal-Sun-Glasses-Classic-Retro-Outdoor-Eyewear-Oculos_0079d389-153f-48a8-8d3a-928126597c19.jpg",
+      title: "UV Protection Wayfarer Sunglasses",
+      price: 724,
+      rating: 4.7
+    },
+    {
+      id: 'cw12',
+      image: "https://sunski.com/cdn/shop/files/sunski_polarized_sunglasses_baia_24_1400x1100.jpg",
+      title: "UV Protection Cat-eye Sunglasses",
+      price: 599,
+      rating: 4.7
+    },
+    {
+      id: 'cw13',
+      image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRl35UNY-gYqncfh_nokPzg4SDtYWA1I5Af59ycsyUAjiNiAhoOkfJR-F0BasogBBRNdhzsiO_Qjjzs1sarT0LX9xKNXDf_hpyJdrM2hHdwThyzwJpBPKnz",
+      title: "Analog Watch - For Women",
+      price: 1450,
+      rating: 4.7
+    },
+    {
+      id: 'cw14',
+      image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRws8XL7D0q9LXHrOsmLrPbKXj0GL8IkdX7GfFVoAzDfK9gLM9-Nt1hKPs6kkQXFV4USn5UvK7FM9hUZdX0pw8BhMj11-f_hTIGJU-GykfsvTSJwZ2dNYZxmg",
+      title: "Izzy Analog Watch - For Women ES4782",
+      price: 2999,
+      rating: 4.7
+    },
+    {
+      id: 'cw15',
+      image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQX7L1qRYDmB95S2lFXDUPpr5u-cdxClRKS49TH8At7CpDS4vtbGZkw8UG5gbXtlo1_6pCsab1MCX1AUhfTUz3Rr1vSy88g9LN7UCPUFiDxWsRT9oiSjdHfqg",
+      title: "Stylish Trending Sneakers For Women",
+      price: 3199,
+      rating: 4.7
+    },
+    {
+      id: 'cw16',
+      image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGHbg9rysF-ev3QU9QUioBwDUq0D4jodklJl3Zh8qsxZ_PojMY9pHL-Ay_5GpNFxKuHB8iH-oYT3HSp3C8PEpyFyoK08fHd4Nh4rzeoS0d",
+      title: "CAMP-CLINT Sneakers For Women",
+      price: 2999,
+      rating: 4.7
+    }
+  ];
 
   const btnclick = (event) => {
     if (!user) {
       alert('Please login first to add items to your cart.');
       navigate1('/login');
       return;
-      }
+    }
     const clickedBtn = event.target;
-    if(clickedBtn.innerText === "Go to Cart")
-      {
-        navigate2('/cart');
-        return;
-      }
+    if(clickedBtn.innerText === "Go to Cart") {
+      navigate2('/cart');
+      return;
+    }
     const value = clickedBtn.value;
     const imgElement = document.getElementById(value).querySelector("img");
     const src = imgElement.getAttribute("src") || "";
     const description = document.getElementById(clickedBtn.getAttribute("data-text")).innerText || "";
     const str = document.getElementById(clickedBtn.getAttribute("data-amount")).innerText || "";
-    const number = str.match(/\d+/g); // returns an array of matched numbers
+    const number = str.match(/\d+/g);
     const result = number ? number.join("") : "";
     const amount = parseInt(result);
     const dataToSend = {
@@ -43,14 +268,41 @@ const Shop = () => {
     addToCart(dataToSend);
     clickedBtn.innerText = "Go to Cart";
   };
-   return(
-     <>
-       <div className="home1">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="ride">
+
+  const renderProduct = (product, index) => (
+    <div key={product.id} className="product-item">
+      <div className="card" id={product.id}>
+        <img src={product.image} alt={product.title} />
+      </div>
+      <div className="details">
+        <div id={`t${product.id}`}>{product.title}</div>
+        <div className='gridd'>
+          <div id={`a${product.id}`}>Rs.{product.price}</div>
+          <div>
+            <button 
+              className='cartbtn' 
+              onClick={btnclick} 
+              value={product.id} 
+              data-text={`t${product.id}`} 
+              data-amount={`a${product.id}`}
+            >
+              Add to cart
+            </button>
+          </div>
+          <div>{product.rating}<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return(
+    <>
+      <div className="home1">
+        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="ride">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src="9706877.jpg" className="d-block w-100" alt="..."></img>
-                <div className="carousel-caption">
+              <div className="carousel-caption">
                 <p>Step into your power with fashion <br /> that turns heads, breaks norms,  <br />and defines your vibe</p>
               </div>
             </div>
@@ -62,7 +314,7 @@ const Shop = () => {
             </div>
             <div className="carousel-item">
               <img src="handsome-tourist-straw-hat-put-sunglasses-summer-vacation-standing-blue-background.jpg" className="d-block w-100" alt="..."></img>
-               <div className="carousel-caption">
+              <div className="carousel-caption">
                 <p>Effortless fashion for <br /> everyday statement looks</p>
               </div>
             </div>
@@ -77,356 +329,114 @@ const Shop = () => {
           </button>
         </div>
       </div>
-      <div className='Line flexbox'>
-      <div className='flexbox'><h1>MENS FASHION</h1><button class="btn btn-secondary dropdown-toggle dropdown no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Shirts</a></li>
-    <li><a class="dropdown-item" href="#">TShirts</a></li>
-    <li><a class="dropdown-item" href="#">Trousers</a></li>
-    <li><a class="dropdown-item" href="#">Jeans</a></li>
-  </ul>
-  </button></div>
-      <div className='flexbox'><h1>WOMENS FASHION</h1><button class="btn btn-secondary dropdown-toggle dropdown no-caret" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Tshirts</a></li>
-    <li><a class="dropdown-item" href="#">Salwaar suits</a></li>
-    <li><a class="dropdown-item" href="#">Jeans</a></li>
-    <li><a class="dropdown-item" href="#">Traditionals</a></li>
-  </ul>
-  </button></div>
-      </div>
-      <div className="flexbox">
-      <div id="MensFashion" className="grid">
-        <div className="card flexbox" id='cm1'><img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8fDA%3D" alt="" /></div>
-        <div className="card flexbox" id='cm2'><img src="https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fHww" alt="" /></div>
-        <div className="details">
-          <div id='tm1'>Men's Casual Denim Shirt</div>
-          <div className='gridd'>
-            <div id='am1'>Rs.700</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm1' data-text="tm1" data-amount="am1">Add to cart</button>
-            </div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tm2'>Men's Casual Check Shirt</div>
-          <div className='gridd'>
-           <div id="am2">Rs.460</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm2' data-text="tm2" data-amount="am2">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cm3'><img src="https://images.unsplash.com/photo-1521498542256-5aeb47ba2b36?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTQ2MzI2NHx8ZW58MHx8fHx8" alt="" /></div>
-        <div className="card flexbox" id='cm4'><img src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ZU11M2RUa3MtQk18fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="details">
-          <div id='tm3'>Round Neck Slimfit Tshirt</div>
-          <div className='gridd'>
-            <div id='am3'>Rs.460</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm3' data-text="tm3" data-amount="am3">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-        <div className="details"><div id='tm4'>Round Neck Slimfit Tshirt</div>
-          <div className='gridd'>
-            <div id='am4'>Rs.450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm4' data-text="tm4" data-amount="am4">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-        <div className="card flexbox" id='cm5'><img src="https://media.istockphoto.com/id/182422958/photo/plain-white-t-shirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=1-XoGdX1DxIEo_4GI7CVAOuoRd1EJBA4CKQ1dt68Ccg=" alt="" /></div>
-        <div className="card flexbox" id='cm6'><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODQwMDgzODl8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="details"><div id='tm5'>Solid White Round Neck Tshirt</div>
-          <div className='gridd'>
-            <div id='am5'>Rs.350</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm5' data-text="tm5" data-amount="am5">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-        <div className="details"><div id='tm6'>Men's Fashion Trendy Tshirt</div>
-          <div className='gridd'>
-            <div id='am6'>Rs.650</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm6' data-text="tm6" data-amount="am6">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-        <div className="card flexbox" id='cm7'><img src="https://images.unsplash.com/photo-1490168105446-f43395eb50b5?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTcyMjY1MHx8ZW58MHx8fHx8" alt="" /></div>
-        <div className="card flexbox" id='cm8'><img src="https://images.unsplash.com/photo-1464278860589-b2ed64f87e22?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NDI4NzA2fHxlbnwwfHx8fHw%3D" alt="" /></div>
-        <div className="details"><div id='tm7'>Men Lace up Sneaker Shoes</div>
-          <div className='gridd'>
-            <div id='am7'>Rs.1450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm7' data-text="tm7" data-amount="am7">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-        <div className="details" ><div id='tm8'>Men Leather Sneaker Shoes</div>
-          <div className='gridd'>
-            <div id='am8'>Rs.2559</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm8' data-text="tm8" data-amount="am8">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div></div>
-          <div className="card flexbox" id='cm9'><img src="https://images.unsplash.com/photo-1512755051947-dea0029e93ad?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTE1MTA0MTh8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="card flexbox" id='cm10'><img src="https://images.unsplash.com/photo-1527016021513-b09758b777bd?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTM2MTIxMXx8ZW58MHx8fHx8" alt="" /></div>
-        <div className="details">
-          <div id='tm9'>Mens Trendy Overcoat Jacket</div>
-          <div className='gridd'>
-            <div id='am9'>Rs.3280</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm9' data-text="tm9" data-amount="am9">Add to cart</button>
-            </div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tm10'>Mens Trendy Denim Shirt</div>
-          <div className='gridd'>
-            <div id='am10'>Rs.1380</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm10' data-text="tm10" data-amount="am10">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cm11'><img src="https://images.unsplash.com/photo-1581068505339-d155712f0add?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8bkt3OXFTSGUtcHd8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="card flexbox" id='cm12'><img src="https://images.unsplash.com/photo-1619466122087-e1ff06cf234b?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8d2pLcklEVzc5RUV8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="details">
-          <div id='tm11'>Mens Stylish Street Shoes</div>
-          <div className='gridd'>
-            <div id='am11'>Rs.1899</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm11' data-text="tm11" data-amount="am11">Add to cart</button>
-            </div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tm12'>Mens Stylish Street Shoes</div>
-          <div className='gridd'>
-            <div id='am12'>Rs.1899</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm12' data-text="tm12" data-amount="am12">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cm13'><img src="https://images.unsplash.com/photo-1496637721836-f46d116e6d34?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTAyNTU2Mjl8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="card flexbox" id='cm14'><img src="https://images.unsplash.com/photo-1563891217861-7924b471afb3?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTY3Nzc3N3x8ZW58MHx8fHx8" alt="" /></div>
-        <div className="details">
-          <div id='tm13'>100% UV protected Wayfarer Sunglasses</div>
-          <div className='gridd'>
-            <div id='am13'>Rs.750</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm13' data-text="tm13" data-amount="am13">Add to cart</button>
-            </div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tm14'>UV protected Trendy Sunglasses</div>
-          <div className='gridd'>
-            <div id='am14'>Rs.450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm14' data-text="tm14" data-amount="am14">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        
-        <div className="card flexbox" id='cm15'><img src="https://images.unsplash.com/photo-1586882829491-b81178aa622e?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTE3MjE3NzZ8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
-        <div className="card flexbox" id='cm16'><img src="https://images.unsplash.com/photo-1588099768550-4014589e03e0?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTk4Mzk3MHx8ZW58MHx8fHx8" alt="" /></div>
-        <div className="details">
-          <div id='tm15'>Men's Magnum casual Sneakers</div>
-          <div className='gridd'>
-            <div id='am15'>Rs.3750</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm15' data-text="tm15" data-amount="am15">Add to cart</button>
-            </div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tm16'>Men suede Sneaker shoes</div>
-          <div className='gridd'>
-            <div id='am16'>Rs.3450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cm16' data-text="tm16" data-amount="am16">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-      </div>
-      <div id="womensFashion" className="grid">
-        <div className="card flexbox" id='cw1'><img src="https://images.unsplash.com/photo-1634412327877-836164201d16?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8NTQzOTM0OTR8fGVufDB8fHx8fA%3D%3D"alt="" /></div>
-        <div className="card flexbox" id='cw2'><img src="https://6497b763e8a77346f1b0bbd4--idyllic-brigadeiros-146de5.netlify.app/f8.jpg" alt="" /></div>
-        <div className="details" >
-          <div id='tw1'>Women Regular Fit Solid Formal Shirt</div>
-          <div className='gridd'>
-            <div id='aw1'>Rs.999</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw1' data-text="tw1" data-amount="aw1">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw2'>Casual Bell Sleeves Embroidered Top</div>
-          <div className='gridd'>
-            <div id='aw2'>Rs.699</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw2' data-text="tw2" data-amount="aw2">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw3'><img src="https://fashions.stylevibe.in/wp-content/uploads/2024/06/item008.jpg" alt="" /></div>
-        <div className="card flexbox" id='cw4'><img src="https://fashions.stylevibe.in/wp-content/uploads/2024/06/item002.jpg" alt="" /></div>
-        <div className="details">
-        <div id='tw3'>Copper Ring for Women Jewellery </div>
-          <div className='gridd'>
-            <div id='aw3'>Rs.549</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw3' data-text="tw3" data-amount="aw3">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw4'>Premium Helios Danglers For Women </div>
-          <div className='gridd'>
-            <div id='aw4'>Rs.499</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw4' data-text="tw4" data-amount="aw4">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw5'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-7-2.jpg"alt="" /></div>
-        <div className="card flexbox" id='cw6'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-7-1.jpg"alt="" /></div>
-        <div className="details">
-        <div id='tw5'>Women Wedges Sandal</div>
-          <div className='gridd'>
-            <div id='aw5'>Rs.666</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw5' data-text="tw5" data-amount="aw5">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw6'>Women Wedges Sandal </div>
-          <div className='gridd'>
-            <div id='aw6'>Rs.777</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw6' data-text="tw6" data-amount="aw6">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-       <div className="card flexbox" id='cw7'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-16-2.jpg"alt="" /></div>
-        <div className="card flexbox" id='cw8'><img src="https://wp.alithemes.com/html/evara/evara-frontend/assets/imgs/shop/product-13-2.jpg"alt="" /></div>
-        <div className="details">
-        <div id='tw7'>Women Oversized Fit Solid Casual Shirt</div>
-          <div className='gridd'>
-            <div id='aw7'>Rs. 1919</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw7' data-text="tw7" data-amount="aw7">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw8'>Women Regular Floral Print Casual Shirt</div>
-          <div className='gridd'>
-            <div id='aw8'>Rs.1945</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw8' data-text="tw8" data-amount="aw8">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw9'><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdlTlUpoQgAPIq6I6FNfkF0TiHA9vpTckO3WgKMQ1SpG1mGF3g2gzOi5udqtQArNP-78XJ_at8AcddD5-mJJWwfl4TtCoCzxqxSAhTJUNxNBb_C34DFKrzOw"alt="" /></div>
-        <div className="card flexbox" id='cw10'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRh-cAjoZMIsqqxt2ycbqQBiWHmgl-29FaZikJx2UvvzX8yAW7Lbo52ULGZHsAb1eOtBOYTrM4Dh9C7ojjC0WaAkr0ihVeJfZqcop2VXZWRV-YGf8EZAz7C" alt="" /></div>
-        <div className="details">
-          <div id='tw9'>OGL-09 Casual Shoes for Women </div>
-          <div className='gridd'>
-            <div id='aw9'>Rs.1999</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw9' data-text="tw9" data-amount="aw9">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw10'>Stylish Comfort Sneakers For Women</div>
-          <div className='gridd'>
-            <div id='aw10'>Rs.2250</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw10' data-text="tw10" data-amount="aw10">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw11'><img src="https://funkytradition.com/cdn/shop/files/0_2019-Fashion-Round-Sunglasses-Women-Brand-Designer-Luxury-Metal-Sun-Glasses-Classic-Retro-Outdoor-Eyewear-Oculos_0079d389-153f-48a8-8d3a-928126597c19.jpg?v=1723512244"alt="" /></div>
-        <div className="card flexbox" id='cw12'><img src="https://sunski.com/cdn/shop/files/sunski_polarized_sunglasses_baia_24_1400x1100.jpg?v=1721341129" alt="" /></div>
-        <div className="details">
-          <div id='tw11'> UV Protection Wayfarer Sunglasses</div>
-          <div className='gridd'>
-            <div id='aw11'>Rs.724</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw11' data-text="tw11" data-amount="aw11">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw12'> UV Protection Cat-eye Sunglasses </div>
-          <div className='gridd'>
-            <div id='aw12'>Rs.599</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw12' data-text="tw12" data-amount="aw12">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw13'><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRl35UNY-gYqncfh_nokPzg4SDtYWA1I5Af59ycsyUAjiNiAhoOkfJR-F0BasogBBRNdhzsiO_Qjjzs1sarT0LX9xKNXDf_hpyJdrM2hHdwThyzwJpBPKnz"alt="" /></div>
-        <div className="card flexbox" id='cw13'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRws8XL7D0q9LXHrOsmLrPbKXj0GL8IkdX7GfFVoAzDfK9gLM9-Nt1hKPs6kkQXFV4USn5UvK7FM9hUZdX0pw8BhMj11-f_hTIGJU-GykfsvTSJwZ2dNYZxmg" alt="" /></div>
-        <div className="details">
-          <div id='tw13'>Analog Watch - For Women </div>
-          <div className='gridd'>
-            <div id='aw13'>Rs.1450</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw13' data-text="tw13" data-amount="aw13">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw14'>Izzy Analog Watch - For Women ES4782</div>
-          <div className='gridd'>
-            <div id='aw14'>Rs.2999</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw14' data-text="tw14" data-amount="aw14">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="card flexbox" id='cw15'><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQX7L1qRYDmB95S2lFXDUPpr5u-cdxClRKS49TH8At7CpDS4vtbGZkw8UG5gbXtlo1_6pCsab1MCX1AUhfTUz3Rr1vSy88g9LN7UCPUFiDxWsRT9oiSjdHfqg"alt="" /></div>
-        <div className="card flexbox" id='cw16'><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTGHbg9rysF-ev3QU9QUioBwDUq0D4jodklJl3Zh8qsxZ_PojMY9pHL-Ay_5GpNFxKuHB8iH-oYT3HSp3C8PEpyFyoK08fHd4Nh4rzeoS0d" alt="" /></div>
-        <div className="details">
-          <div id='tw15'>Stylish Trending Sneakers For Women</div>
-          <div className='gridd'>
-            <div id='aw15'>Rs.3199</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw15' data-text="tw15" data-amount="aw15">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="details">
-        <div id='tw16'>CAMP-CLINT Sneakers For Women</div>
-          <div className='gridd'>
-            <div id='aw16'>Rs. 2999</div>
-            <div ><button className='cartbtn' onClick={btnclick} value='cw16' data-text="tw16" data-amount="aw16">Add to cart</button></div>
-            <div >4.7<img src="https://cdn-icons-png.flaticon.com/512/541/541415.png" alt="" /></div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div className="footer">
-        <div className="footer1">
-          <div id="logo">
-            <div
-              style={{
-                fontFamily: "'Irish Grover', cursive",
-                fontSize: "28px",
-              }}
-            >
-              OffStore
-            </div>
-          </div>
 
+      <div className='Line'>
+        <div className='flexbox'>
+          <h1>MENS FASHION</h1>
+        </div>
+      </div>
+
+      <div className="product-grid">
+        {mensProducts.map(renderProduct)}
+      </div>
+
+      <div className='Line'>
+        <div className='flexbox'>
+          <h1>WOMENS FASHION</h1>
+        </div>
+      </div>
+
+      <div className="product-grid">
+        {womensProducts.map(renderProduct)}
+      </div>
+
+      {/* Newsletter Section */}
+      <section className="newsletter-section">
+        <div className="newsletter-content">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Get updates on new arrivals, special offers and more.</p>
+          <div className="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button className="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-brand">
+            <div className="logo">OffStore</div>
+            <p>Your one-stop destination for trendy fashion and accessories at affordable prices.</p>
+            <div className="social-icons">
+              <a href="#" className="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" className="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" className="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="#" className="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-youtube">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
           <div className="footer-links">
             <h4>Quick Links</h4>
             <ul>
-              <li>Home</li>
-              <li>Shop</li>
-              <li>About Us</li>
-              <li>FAQs</li>
-              <li>Contact</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Men's Clothing</a></li>
+              <li><a href="#">Women's Clothing</a></li>
+              <li><a href="#">Kids Collection</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Footwear</a></li>
             </ul>
           </div>
 
           <div className="footer-contact">
             <h4>Contact Us</h4>
-            <p>+91 1234567890</p>
-            <p>Address: New York, USA</p>
-            <p>✉️ Email: support@offstore.com</p>
-          </div>
-
-          <div className="footer-social">
-            <h4>Follow Us</h4>
-            <div className="social-icons">
-              <i className="fab fa-facebook-f"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-twitter"></i>
-              <i className="fab fa-youtube"></i>
+            <div className="contact-info">
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 1234567890</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> New York, USA</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> support@offstore.com</p>
             </div>
           </div>
         </div>
+        
+        <div className="footer-bottom">
+          <p>© 2025 OffStore. All rights reserved.</p>
+          <div className="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
         </div>
-     </>
-    );
+      </footer>
+    </>
+  );
 };
+
 export default Shop;
